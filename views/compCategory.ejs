@@ -1,0 +1,223 @@
+<%include partials/header3.ejs%>
+
+
+<!--Main Start-->
+<main id="wt-main" class="wt-main wt-haslayout">
+    <!--Sidebar Start-->
+    <div id="wt-sidebarwrapper" class="wt-sidebarwrapper">
+        <div id="wt-btnmenutoggle" class="wt-btnmenutoggle">
+            <span class="menu-icon">
+                <em></em>
+                <em></em>
+                <em></em>
+            </span>
+        </div>
+        <div id="wt-verticalscrollbar" class="wt-verticalscrollbar">
+            <div class="wt-companysdetails wt-usersidebar">
+                <figure class="wt-companysimg">
+                    <img src="../assets/images/sidebar/img-01.jpg" alt="img description">
+                </figure>
+                <div class="wt-companysinfo">
+                    <figure><img src="../assets/images/sidebar/img-02.jpg" alt="img description"></figure>
+                    <div class="wt-title">
+                        <h2><a href="javascript:void(0);"> Louanne Mattioli</a></h2>
+                        <span>Amento Tech</span>
+                    </div>
+                    <div class="wt-btnarea"><a href="dashboard-postjob.html" class="wt-btn">Post a Job</a></div>
+                </div>
+            </div>
+            <nav id="wt-navdashboard" class="wt-navdashboard">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="javascript:void(0);">
+                            <i class="ti-dashboard"></i>
+                            <span>Insights</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><hr><a href="dashboard-insights.html">Insights</a></li>
+                            <li><hr><a href="dashboard-insightsuser.html">Insights User</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dashboard-profile.html">
+                            <i class="ti-briefcase"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="javascript:void(0);">
+                            <i class="ti-package"></i>
+                            <span>All Jobs</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><hr><a href="dashboard-completejobs.html">Completed Jobs</a></li>
+                            <li><hr><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li>
+                            <li><hr><a href="dashboard-ongoingjob.html">Ongoing Jobs</a></li>
+                            <li><hr><a href="dashboard-ongoingsingle.html">Ongoing Single</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dashboard-managejobs.html">
+                            <i class="ti-announcement"></i>
+                            <span>Manage Jobs</span>
+                        </a>
+                    </li>
+                    <li class="wt-notificationicon menu-item-has-children">
+                        <a href="javascript:void(0);">
+                            <i class="ti-pencil-alt"></i>
+                            <span>Messages</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><hr><a href="dashboard-messages.html">Messages</a></li>
+                            <li><hr><a href="dashboard-messages2.html">Messages V 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dashboard-saveitems.html">
+                            <i class="ti-heart"></i>
+                            <span>My Saved Items</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-invocies.html">
+                            <i class="ti-file"></i>
+                            <span>Invoices</span>
+                        </a>
+                    </li>
+                    <li class="wt-active">
+                        <a href="/category/addPage">
+                            <i class="ti-layers"></i>
+                            <span>Category</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-packages.html">
+                            <i class="ti-money"></i>
+                            <span>Packages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-proposals.html">
+                            <i class="ti-bookmark-alt"></i>
+                            <span>Proposals</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-accountsettings.html">
+                            <i class="ti-anchor"></i>
+                            <span>Account Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-helpsupport.html">
+                            <i class="ti-tag"></i>
+                            <span>Help &amp; Support</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="ti-shift-right"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wt-navdashboard-footer">
+                <span>Worktern. © 2019 All Rights Reserved.</span>
+            </div>
+        </div>
+    </div>
+    <!--Sidebar Start-->
+    <!--Register Form Start-->
+    <section class="wt-haslayout wt-dbsectionspace">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 float-left">
+                <!-- Start Add Category Div  -->
+                <div class="wt-dashboardbox">
+                    <div class="wt-dashboardboxtitle">
+                        <h2>Add New Category</h2>
+                    </div>
+                    <div class="wt-dashboardboxcontent">
+                        <form class="wt-formtheme wt-formprojectinfo wt-formcategory" action="/category/addPage" method="POST">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input type="text" name="categoryTitle" class="form-control" placeholder="Name">
+                                    <span class="form-group-description">Dolore magna aliqua enim adminim</span>
+                                </div>
+                                <!--                                
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" placeholder="Description"></textarea>
+                                    <span class="form-group-description">Veniam quis nostrud exercitation</span>
+                                </div> -->
+                                
+                                
+                                <div class="form-group wt-btnarea">
+                                    <button type="submit"  class="wt-btn">Add New Category</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Add Category Div -->
+
+               
+            </div>
+          
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 float-right">
+                    <div class="wt-dashboardbox wt-categorys">
+                        <div class="wt-dashboardboxtitle wt-titlewithsearch">
+                            <h2>Categories</h2>
+                            <form class="wt-formtheme wt-formsearch">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input type="text" name="category" class="form-control" placeholder="Search Category">
+                                        <a href="javascrip:void(0);" class="wt-searchgbtn"><i class="lnr lnr-magnifier"></i></a>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="wt-dashboardboxcontent wt-categoriescontentholder">
+                            <table class="wt-tablecategories">
+                                <thead>
+                                       
+                                    <tr>
+                                        
+                                        <th>Name</th>
+                                        
+                                        <th>Action</th>
+                                    </tr>
+                                    
+                                </thead>
+                                <tbody>
+                                        <%for(var x=0;x<categories.length;x++){%>
+                                    <tr>
+                                    
+                                        <td><%=categories[x].categoryTitle%></td>
+                                        <td>
+                                            <div class="wt-actionbtn">
+                                                <a href="javascript:void(0);" class="wt-addinfo wt-skillsaddinfo"><i class="lnr lnr-pencil"></i></a>
+                                                <a href="javascript:void(0);" class="wt-deleteinfo"><i class="lnr lnr-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <%}%>
+                                   
+                                </tbody>
+                            </table>
+                         
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </div>
+    </section>
+    <!--Register Form End-->
+</main>
+<!--Main End-->	
+</div>
+<!--Content Wrapper End-->
+</div>
+
+<%include partials/footer2.ejs%>

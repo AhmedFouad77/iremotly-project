@@ -1,0 +1,50 @@
+<% include partials/header2.ejs %>
+
+<div class="wt-loginformhold" style="display: block; float: none;position: relative;">
+    <div class="wt-loginheader">
+        <span>Login</span>
+        <a href="javascript:;"><i class="fa fa-times"></i></a>
+    </div>
+
+        <form class="wt-formtheme wt-loginform do-login-form" action="/user/login" method="POST">
+        <fieldset>
+            <div class="form-group">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="wt-logininfo">
+                <input type="submit" class="wt-btn btn do-login-button"value="Login">
+                
+                    <span class="wt-checkbox">
+                    <input id="wt-login" type="checkbox" name="rememberme">
+                    <label for="wt-login">Keep me logged in</label>
+                </span>
+                
+            </div>
+        </fieldset>
+        <div class="wt-loginfooterinfo">
+            <a href="javascript:;" class="wt-forgot-password">Forgot password?</a>
+            <a href="/user/signUp">Create account</a>
+        </div>
+    </form>
+
+    <form class="wt-formtheme wt-loginform do-forgot-password-form wt-hide-form">
+        <fieldset>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control get_password" placeholder="Email">
+            </div>
+           
+            <div class="wt-logininfo">
+                <a href="javascript:;" class="wt-btn do-get-password">Get Pasword</a>
+            </div>     
+        </fieldset>
+        <div class="wt-loginfooterinfo">
+            <a href="javascript:void(0);" class="wt-show-login">Login</a>
+            <a href="/user/signUp">Create account</a>
+        </div>
+    </form>
+</div>
+
+<% include partials/footer.ejs %>

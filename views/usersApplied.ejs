@@ -1,0 +1,1155 @@
+<base href="http://192.168.1.137:8080/">
+<% include partials/header3.ejs %>
+<!-- <!DOCTYPE html> -->
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!-- <html class="no-js" lang=""> -->
+<!--<![endif]-->
+<!-- 
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title><%=title%></title>
+        <meta name="description" content="">
+        <base href="http://192.168.1.137:8080/">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/scrollbar.css">
+		<link rel="stylesheet" href="assets/css/fontawesome/fontawesome-all.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/themify-icons.css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/jquery-ui.css">
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+		<link rel="stylesheet" href="assets/css/tipso.css">
+		<link rel="stylesheet" href="assets/css/chosen.css">
+		<link rel="stylesheet" href="assets/css/prettyPhoto.css">
+		<link rel="stylesheet" href="assets/css/basictable.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/dashboard.css">
+		<link rel="stylesheet" href="assets/css/color.css">
+		<link rel="stylesheet" href="assets/css/transitions.css">
+		<link rel="stylesheet" href="assets/css/responsive.css">
+		<link rel="stylesheet" href="assets/css/dbresponsive.css">
+		<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	</head> -->
+
+<!-- <body class="wt-login"> -->
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<!-- Wrapper Start -->
+		<!-- Preloader Start -->
+		<!-- <div class="preloader-outer">
+			<div class="loader"></div>
+		</div> -->
+		<!-- Preloader End -->
+		<!-- <div id="wt-wrapper" class="wt-wrapper wt-haslayout"> -->
+			<!--Content Wrapper Start-->
+			<!--Header Start
+			<header id="wt-header" class="wt-header wt-headervtwo wt-haslayout">
+				<div class="wt-navigationarea">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<strong class="wt-logo"><a href="/"><img src="../../assets/images/logo.png" alt="company logo here"></a></strong>
+								<form class="wt-formtheme wt-formbanner wt-formbannervtwo" method="GET" action="/filter/heaerSearch">
+									<fieldset>
+										<div class="form-group">
+											<input type="text" name="jobTitle" class="form-control" placeholder="I’m looking for">
+											<div class="wt-formoptions">
+												<div class="wt-dropdown">
+													<span>In: <em class="selected-search-type">Employiees </em><i class="lnr lnr-chevron-down"></i></span>
+												</div>
+												<div class="wt-radioholder">
+													<span class="wt-radio">
+														<input id="wt-freelancers" data-title="Freelancers" type="radio" name="searchtype" value="Employiees" checked="">
+														<label for="wt-freelancers">Employiees</label>
+													</span>
+													<span class="wt-radio">
+														<input id="wt-jobs" data-title="Jobs" type="radio" name="searchtype" value="job">
+														<label for="wt-jobs">Jobs</label>
+													</span>
+													<span class="wt-radio">
+														<input id="wt-companies" data-title="Companies" type="radio" name="searchtype" value="Companies">
+														<label for="wt-companies">Companies</label>
+													</span>
+												</div>
+												<button type="submit" class="wt-searchbtn"><i class="lnr lnr-magnifier"></i></button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+                                <div class="wt-rightarea">
+                                    <nav id="wt-nav" class="wt-nav navbar-expand-lg">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+											<i class="lnr lnr-menu"></i>
+										</button>
+<!-- <<<<<<< HEAD
+                                        <div class="collapse navbar-collapse wt-navigation" id="navbarNav">
+                                            <ul class="navbar-nav">
+                                                <li class="menu-item-has-children page_item_has_children">
+                                                    <a href="javascript:void(0);">Main</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item-has-children page_item_has_children wt-notificationicon"><span class="wt-dropdowarrow"><i class="lnr lnr-chevron-right"></i></span>
+                                                            <a href="javascript:void(0);">Home</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="index.html">Home v1</a></li>
+                                                                <li class="wt-newnoti"><a href="indexvtwo.html">Home v2<em>without login</em></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item-has-children page_item_has_children"><span class="wt-dropdowarrow"><i class="lnr lnr-chevron-right"></i></span>
+                                                            <a href="javascript:void(0);">Article</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="articlelist.html">Article List</a></li>
+                                                                <li><a href="articlegrid.html">Article Grid</a></li>
+                                                                <li><a href="articlesingle.html">Article Single</a></li>
+                                                                <li><a href="articleclassic.html">Article Classic</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item-has-children page_item_has_children"><span class="wt-dropdowarrow"><i class="lnr lnr-chevron-right"></i></span>
+                                                            <a href="javascript:void(0);">Company</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="companygrid.html">Company Grid</a></li>
+                                                                <li><a href="companysigle.html">Company Sigle</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="about.html">About</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="privacypolicy.html">Privacy Policy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="comingsoon.html">Coming Soon</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="404page.html">404page</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="howitworks.html">How It Works</a>
+                                                </li>
+                                                <li class="menu-item-has-children page_item_has_children">
+                                                    <a href="javascript:void(0);">Browse Jobs</a>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="joblisting.html">Job Listing</a>
+                                                        </li>
+                                                        <li class="current-menu-item">
+                                                            <a href="jobsingle.html">Job Single</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="jobproposal.html">Job Proposal</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children page_item_has_children">
+                                                    <a href="javascript:void(0);">View Freelancers</a>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="userlisting.html">User Listing</a>
+                                                        </li>
+                                                        <li class="current-menu-item">
+                                                            <a href="usersingle.html">User Single</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+
+                                    
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+             Header End
+
+										<div class="collapse navbar-collapse wt-navigation" id="navbarNav">
+											<ul class="navbar-nav">
+												<li class="menu-item-has-children page_item_has_children">
+													<a href="javascript:void(0);">Main</a>
+													<ul class="sub-menu">
+														<li class="menu-item-has-children page_item_has_children wt-notificationicon"><span class="wt-dropdowarrow"><i class="lnr lnr-chevron-right"></i></span>
+															<a href="/">Home</a>
+															
+														</li>
+														 
+															<li class="menu-item-has-children page_item_has_children"><span class="wt-dropdowarrow"><i class="lnr lnr-chevron-right"></i></span>
+															<a href="javascript:void(0);">Article</a>
+															<ul class="sub-menu">
+																<li><a href="articlelist.html">Article List</a></li>
+																<li><a href="articlegrid.html">Article Grid</a></li>
+																<li><a href="articlesingle.html">Article Single</a></li>
+																<li><a href="articleclassic.html">Article Classic</a></li>
+															</ul>
+														</li>
+														
+														<li class="menu-item-has-children page_item_has_children"><span class="wt-dropdowarrow"><i class="lnr lnr-chevron-right"></i></span>
+															<a href="/companyGrid">Find Company</a>
+														</li>
+														<li>
+															<a href="/about">About</a>
+														</li>
+														<li>
+															<a href="/privacyPolicy">Privacy Policy</a>
+														</li>
+													
+															<li>
+															<a href="comingsoon.html">Coming Soon</a>
+														</li>
+														<li>
+															<a href="404page.html">404page</a>
+														</li>
+														
+													</ul>
+												</li>
+												<li class="nav-item">
+													<a href="/howitworks">How It Works</a>
+												</li>
+												<li class="menu-item-has-children page_item_has_children">
+													<a href="/companyPost/allDataPosts">Find Jobs</a>
+												</li>
+												<li class="menu-item-has-children page_item_has_children">
+													<a href="/userlisting">View Employees</a>
+												</li>
+											</ul>
+										</div>
+									</nav>
+								
+									<%if(user===null){%>
+										<div class="wt-loginarea">
+											<figure class="wt-userimg">
+												<img src="../../assets/images/user-login.png" alt="img description">
+											</figure>
+											<div class="wt-loginoption">
+												<a href="javascript:void(0);" id="wt-loginbtn" class="wt-loginbtn">Login</a>
+												<div class="wt-loginformhold">
+													<div class="wt-loginheader">
+														<span>Login</span>
+														<a href="javascript:;"><i class="fa fa-times"></i></a>
+													</div>
+													<form class="wt-formtheme wt-loginform do-login-form" action="/user/login" method="POST">
+														<fieldset>
+															<div class="form-group">
+																<input type="email" name="email" id="email" class="form-control" placeholder="Username">
+															</div>
+															<div class="form-group">
+																<input type="password" name="password" id="password" class="form-control" placeholder="Password">
+															</div>
+															<div class="wt-logininfo">
+																<input type="submit" class="wt-btn btn do-login-button"value="Login">
+																
+															</div>
+														</fieldset>
+														<div class="wt-loginfooterinfo">
+															<a href="javascript:;" class="wt-forgot-password">Forgot password?</a>
+															<a href="/user/signUp">Create account</a>
+														</div>
+													</form>
+													<form class="wt-formtheme wt-loginform do-forgot-password-form wt-hide-form">
+														<fieldset>
+															<div class="form-group">
+																<input type="email" name="email" class="form-control get_password" placeholder="Email">
+															</div>
+														   
+															<div class="wt-logininfo">
+																<a href="javascript:;" class="wt-btn do-get-password">Get Pasword</a>
+															</div>     
+														</fieldset>
+														<div class="wt-loginfooterinfo">
+															<a href="javascript:void(0);" class="wt-show-login">Login</a>
+															<a href="/user/signUp">Create account</a>
+														</div>
+													</form>
+												</div>
+											</div>
+											<a href="/user/signUp" class="wt-btn">Join Now</a>
+										</div>
+										<%}else{%>
+										<div class="wt-userlogedin" style="display: block;">
+											<figure class="wt-userimg">
+												<%if(user.role=="User"){%>
+													<%if(user.profilePhoto=="null"){%>
+														<img src="../../assets/images/profile/img-01.jpg" alt="img description">
+													<%}else{%>
+														 <img src="../../assets/images/uploaded/<%=user._id+'_profile.'+user.profilePhoto.split('.')[1]%>" alt="img description"> 
+													<%}%>
+												<%}else if(user.role=="Company"){%>
+													<%if(user.profilePhoto=="null"){%>
+														<img src="../../assets/images/profile/img-01.jpg" alt="image description">
+												
+												<%}else{%>
+													<img src="../../assets/images/uploaded/<%=user._id+'_profile.'+user.profilePhoto.split('.')[1]%>" alt="image description">
+													<%}%>
+												<%}%>
+												
+											</figure>
+											<div class="wt-username">
+												<h3><%=user.firstName%>&nbsp;<%=user.lastName%></h3>
+												<span><%=user.country%></span>
+											</div>
+											<nav class="wt-usernav">
+												<ul>
+													<%if(user.role=="User"){%>
+													<li>
+														<a href="/user/dashboard">
+															<span>Dashboard</span>
+														</a>
+													</li>
+													<%}%>
+													<%if(user.role=="Company"){%>
+													<li>
+														<a href="/company/dashboard">
+															<span>Dashboard</span>
+														</a>
+													</li>
+													<%}%>
+													<li>
+														<a href="/user/myAccount">
+															<span>MY Profile</span>
+														</a>
+													</li>
+													<%if(user.role=="User"){%>
+														<li>
+															<a href="/user/profileSetting">
+																<span>Profile Setting</span>
+															</a>
+														</li>
+														<%}else{%>
+														<li>
+															<a href="/company/companySetting">
+																<span>Company Setting</span>
+															</a>
+														</li>
+														 
+														<li class="menu-item-has-children">
+															<a href="javascript:void(0);">
+																<span>All Jobs</span>
+															</a>
+															<ul class="sub-menu">
+                                                                	<li><a href="/companyPost/stopThisJobPage">Stoped Jobs</a></li>
+																<li><a href="/companyPost/dashbordPost">Ongoing Jobs</a></li>
+                                                                <li><a href="/companyPost/completedThisJobPage">Completed Job</a></li>
+															</ul>
+														</li>
+															<li>
+															<a href="dashboard-managejobs.html">
+																<span>Manage Jobs</span>
+															</a>
+														</li>
+														<li>
+															<a href="dashboard-proposals.html">
+																<span>Proposals</span>
+															</a>
+														</li>
+														<li>
+															<a href="dashboard-invocies.html">
+																<span>Invoices</span>
+															</a>
+														</li>
+														<li>
+														
+														<%}%>
+														<li class="menu-item-has-children">
+														<a href="javascript:void(0);">
+															<span>All Jobs</span>
+														</a>
+														<ul class="sub-menu">
+															<li><a href="dashboard-completejobs.html">Completed Jobs</a></li>
+															<li><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li>
+															<li><a href="/companyPost/usersApplied">Ongoing Jobs</a></li>
+															<li><a href="dashboard-ongoingsingle.html">Ongoing Single</a></li>
+														</ul>
+													</li>
+													
+													
+														<li>
+														<a href="dashboard-managejobs.html">
+															<span>Manage Jobs</span>
+														</a>
+													</li>
+													
+													
+													<li class="wt-notificationicon menu-item-has-children">
+														<a href="dashboard-messages.html">
+															<span>Messages</span>
+														</a>
+														
+													</li>
+													
+														<li>
+														<a href="dashboard-saveitems.html">
+															<span>My Saved Items</span>
+														</a>
+													</li>
+													
+													
+														<a href="dashboard-invocies.html">
+															<span>Invoices</span>
+														</a>
+													</li>
+													<li> 
+														<a href="dashboard-category.html">
+															<span>Category</span>
+														</a>
+													</li>
+												
+													
+														<li>
+														<a href="dashboard-accountsettings.html">
+															<span>Account Settings</span>
+														</a>
+													</li>
+													
+													<li>
+														<a href="dashboard-helpsupport.html">
+															<span>Help &amp; Support</span>
+														</a>
+													</li>
+													<li>
+														
+														<a>
+																<form action="/user/logout" method="POST">
+																	<span>
+																<input type="submit" style="border: none;background-color: transparent;" value="logout">
+																</span>
+																</form>
+															</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+										<%}%>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </header>
+        
+		Header End-->   
+      <!-- Start The Page -->
+    
+     <main id="wt-main" class="wt-main wt-haslayout">
+            <!--Sidebar Start-->
+            <!-- <div id="wt-sidebarwrapper" class="wt-sidebarwrapper">
+                <div id="wt-btnmenutoggle" class="wt-btnmenutoggle">
+                    <span class="menu-icon">
+                        <em></em>
+                        <em></em>
+                        <em></em>
+                    </span>
+                </div>
+                <div id="wt-verticalscrollbar" class="wt-verticalscrollbar">
+                    <div class="wt-companysdetails wt-usersidebar">
+                        <figure class="wt-companysimg">
+                            <img src="../../assets/images/sidebar/img-01.jpg" alt="img description">
+                        </figure>
+                        <div class="wt-companysinfo">
+                            <figure><img src="../../assets/images/sidebar/img-02.jpg" alt="img description"></figure>
+                            <div class="wt-title">
+                                <h2><a href="javascript:void(0);"> Louanne Mattioli</a></h2>
+                                <span>Amento Tech</span>
+                            </div>
+                            <div class="wt-btnarea"><a href="dashboard-postjob.html" class="wt-btn">Post a Job</a></div>
+                        </div>
+                    </div>
+                    <nav id="wt-navdashboard" class="wt-navdashboard">
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="javascript:void(0);">
+                                    <i class="ti-dashboard"></i>
+                                    <span>Insights</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><hr><a href="dashboard-insights.html">Insights</a></li>
+                                    <li><hr><a href="dashboard-insightsuser.html">Insights User</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="dashboard-profile.html">
+                                    <i class="ti-briefcase"></i>
+                                    <span>My Profile</span>
+                                </a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="javascript:void(0);">
+                                    <i class="ti-package"></i>
+                                    <span>All Jobs</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><hr><a href="dashboard-completejobs.html">Completed Jobs</a></li>
+                                    <li><hr><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li>
+                                    <li><hr><a href="dashboard-ongoingjob.html">Ongoing Jobs</a></li>
+                                    <li><hr><a href="dashboard-ongoingsingle.html">Ongoing Single</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="dashboard-managejobs.html">
+                                    <i class="ti-announcement"></i>
+                                    <span>Manage Jobs</span>
+                                </a>
+                            </li>
+                            <li class="wt-notificationicon menu-item-has-children">
+                                <a href="javascript:void(0);">
+                                    <i class="ti-pencil-alt"></i>
+                                    <span>Messages</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><hr><a href="dashboard-messages.html">Messages</a></li>
+                                    <li><hr><a href="dashboard-messages2.html">Messages V 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="dashboard-saveitems.html">
+                                    <i class="ti-heart"></i>
+                                    <span>My Saved Items</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-invocies.html">
+                                    <i class="ti-file"></i>
+                                    <span>Invoices</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-category.html">
+                                    <i class="ti-layers"></i>
+                                    <span>Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-packages.html">
+                                    <i class="ti-money"></i>
+                                    <span>Packages</span>
+                                </a>
+                            </li>
+                            <li class="wt-active">
+                                <a href="dashboard-proposals.html">
+                                    <i class="ti-bookmark-alt"></i>
+                                    <span>Proposals</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-accountsettings.html">
+                                    <i class="ti-anchor"></i>
+                                    <span>Account Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-helpsupport.html">
+                                    <i class="ti-tag"></i>
+                                    <span>Help &amp; Support</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html">
+                                    <i class="ti-shift-right"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="wt-navdashboard-footer">
+                        <span>Worktern. © 2019 All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div> -->
+            <% include partials/Sidebar.ejs %>
+            <p >
+                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                    SHOORT LIST
+                </button>
+        
+                <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    CANCEL LIST
+                </button>
+             
+                <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                    ACCEPTED
+                </button> -->
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                    ACCEPTED LIST
+                  </button>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                   BOOKING INTERVIEW
+                  </button>
+                  <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                    HIRED
+                  </button>
+              </p>   
+              <section>
+               
+                </section> 
+                <section class="wt-haslayout wt-dbsectionspace collapse" id="collapseExample4">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 ">
+                                <div class="wt-dashboardbox wt-dashboardinvocies">
+                                    <div class="wt-dashboardboxtitle wt-titlewithsearch">
+                                        <h2>SHOORT LIST</h2>
+                                    </div>
+                                    <div class="wt-dashboardboxcontent wt-categoriescontentholder wt-categoriesholder">
+                                        <table class="wt-tablecategories">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                    </th>
+                                                    <th></th>
+                                                    <th>Name </th>
+                                                    <th>File Attatchment</th>
+                                                    <th>Cover Letter</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <% for(let user of data){%>
+                                                <tbody>
+                                                    <%if(user.Status === "Add To Short Least"){%>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <td>
+                                                            <%if(user.userApplication.profilePhoto!=="null"){%>
+                                                                <figure class="wt-userlistingimg">
+                                                                        <img src="../assets/images/uploaded/<%=user.userApplication._id+'_profile.'+user.userApplication.profilePhoto.split('.')[1]%>" alt="img description"> 
+                                                                    <!-- <img src="../../assets/images/uploaded/<%=user.userApplication._id%>" alt="image description" class="mCS_img_loaded"> -->
+                                                                </figure>
+                                                                <%}else{%>
+                                                                <figure class="wt-userlistingimg">
+                                                                        <img src="../../assets/images/user/userlisting/img-01.jpg" alt="image description" class="mCS_img_loaded">
+                                                                </figure>
+                                                                <%}%>
+                                                        </td>
+                                                        <td><h4> <a href="/userPage/<%=user.userApplication._id%>" class="badge badge-pill badge-warning"><%=user.userApplication.firstName%></a> </h3></td>
+                                                            <div class="wt-hireduserstatus">
+                                                        <td>
+                                                           
+                                                                <i class="far fa-paperclip"></i>
+                                                               <a href="/../assets/attachment/<%=user.userApplication._id+user.Date +'.'+user.fileExtention%>"> 
+                                                                <span> file attached</span>
+                                                              </a>
+                                                        
+                                                        </td>
+                                                          </div>
+                                                      <div class="wt-hireduserstatus">
+                                                         <td>
+                                                                <i class="far fa-envelope"></i>
+                                                                 <a data-toggle="collapse" href="#<%=user.userApplication._id%>22" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                                <span>Cover Letter</span>
+                                                                </a>
+                                                          </td>
+                                                      </div>
+                                                       
+                                                        <td>
+                                                                <div  class="wt-btnarea" >
+                                                                        <a href="/companyPost/hireUser/<%=user.userApplication._id%>/<%=user.postID%>"   class="badge badge-dark">Hire Now</a>
+                                                                </div>
+                                                                <form action="/companyPost/compAddToCancelList/<%=user.userApplication._id%>/<%=user.postID%>" method="POST">
+                                                                    <!-- <input type="submit" class="btn btn-danger" value="Add To Cancel List"  > -->
+                                                                    <button type="submit"  class="badge  badge-danger" >Add To Cancel List </button>
+                                                                </form>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <div class="wt-btnarea" >
+                                                        <div class="collapse" id="<%=user.userApplication._id%>22"  style="margin-left: 20px;">
+                                                            <div class="card card-body">
+                                                            <span><%=user.comment%></span>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <%}%>
+                                         
+                                                 
+                                                </tbody>
+                                                <%}%>
+                                               
+                                        </table>
+                                       
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                   
+                    <section class="wt-haslayout wt-dbsectionspace collapse" id="collapseExample7">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 ">
+                                    <div class="wt-dashboardbox wt-dashboardinvocies">
+                                        <div class="wt-dashboardboxtitle wt-titlewithsearch">
+                                            <h2>Booking Interview</h2>
+                                        </div>
+                                        <div class="wt-dashboardboxcontent wt-categoriescontentholder wt-categoriesholder">
+                                            <table class="wt-tablecategories">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                        </th>
+                                                        <th>Name </th>
+                                                        <th>Reaction Of User</th>
+                                                        <th>Date of interview</th>
+                                                        <th>Start Time</th>
+                                                        <th>End Time</th>
+                                                        <th>Any Action :)</th>
+                                                    </tr>
+                                                </thead>
+                                                <% for(let user of data){%>
+                                                    <tbody>
+                                                        <%if(user.Status === "ACCEPTED"){%>
+                                                        <tr>
+                                                            <td>
+                                                            </td>
+                                                            <td> <h4> <a href="/userPage/<%=user.userApplication._id%>" class="badge badge-pill badge-warning"><%=user.userApplication.firstName%></a> </h3></td>
+                                                            <td><%=user.StatusUser%></td>
+                                                            <td><%=user.meeting.DateInterView%></td>
+                                                            <td><%=user.meeting.StartTime%></td>
+                                                            <td><%=user.meeting.EndTime%></td>
+                                                            <td>
+                                                                <%if(user.StatusUser=='User Want Change Metting '){%>
+                                                                 <form action="/companyPost/hireUser/<%=user.userApplication._id%>/<%=user.postID%>" method="get">
+                                                                  <input type="submit" class="btn btn-warning" value="Change Meeting"> 
+                                                                </form>
+                                                                <%}else if(user.StatusUser=='Canceled By User '){%>
+                                                                    <!-- <form action="/companyPost/compAddToCancelList/<%=user.userApplication._id%>/<%=user.postID%>" method="POST">
+                                                                        <input type="submit" class="btn btn-warning" value="Change Meeting"> 
+                                                                      </form> -->
+                                                                <%}else if(user.StatusUser =='Approved By User'){%>
+                                                                    <!-- <form action="<%=user.meeting.UrlCompJoin%>" method="GET">
+                                                                        <input type="submit" class="btn btn-warning" value="click here to interview"> 
+                                                                        </form> -->
+                                                                        <a class="btn btn-dark" href="<%=user.meeting.urlCompJoin%>">click here to interview</a>
+                                                                    <%}%>
+                                                            </td>
+                                                            <td>
+                                                                  <form action="/companyPost/compAddToCancelList/<%=user.userApplication._id%>/<%=user.postID%>" method="POST">
+                                                                    <input type="button" class="badge  badge-dark" value="Add To Cancel List"> 
+                                                                    </form>
+                                                            </td>
+                                                        </tr>
+                                                       <%}%>
+                                                    </tbody>
+                                                    <%}%>
+                                            </table>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="wt-haslayout wt-dbsectionspace collapse"  id="collapseExample6">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 ">
+                                    <div class="wt-dashboardbox wt-dashboardinvocies">
+                                        <div class="wt-dashboardboxtitle wt-titlewithsearch">
+                                            <h2>ACCEPTED LIST</h2>
+                                        </div>
+                                        <div class="wt-dashboardboxcontent wt-categoriescontentholder wt-categoriesholder">
+                                                <table class="wt-tablecategories">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                </th>
+                                                                <th></th>
+                                                                <th>Name </th>
+                                                                <th>File Attatchment</th>
+                                                                <th>Cover Letter</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <% for(let user of data){%>
+                                                            <tbody>
+                                                                <%if(user.Status === "ACCEPTED"){%>
+                                                                <tr>
+                                                                    <td>
+                                                                    </td>
+                                                                    <td>
+                                                                        <%if(user.userApplication.profilePhoto!=="null"){%>
+                                                                            <figure class="wt-userlistingimg">
+                                                                                    <img src="../assets/images/uploaded/<%=user.userApplication._id+'_profile.'+user.userApplication.profilePhoto.split('.')[1]%>" alt="img description"> 
+                                                                                <!-- <img src="../../assets/images/uploaded/<%=user.userApplication._id%>" alt="image description" class="mCS_img_loaded"> -->
+                                                                            </figure>
+                                                                            <%}else{%>
+                                                                            <figure class="wt-userlistingimg">
+                                                                                    <img src="../../assets/images/user/userlisting/img-01.jpg" alt="image description" class="mCS_img_loaded">
+                                                                            </figure>
+                                                                            <%}%>
+                                                                    </td>
+                                                                    <td><h4> <a href="/userPage/<%=user.userApplication._id%>" class="badge badge-pill badge-warning"><%=user.userApplication.firstName%></a> </h3></td>
+                                                                        <div class="wt-hireduserstatus">
+                                                                          <td>
+                                                                       
+                                                                            <i class="far fa-paperclip"></i>
+                                                                           <a href="/../assets/attachment/<%=user.userApplication._id+user.Date +'.'+user.fileExtention%>"> 
+                                                                            <span> file attached</span>
+                                                                          </a>
+                                                                    
+                                                                        </td>
+                                                                      </div>
+                                                                      <div class="wt-hireduserstatus">
+                                                                        <td>
+                                                                             <i class="far fa-envelope"></i>
+                                                                             <a data-toggle="collapse" href="#<%=user.userApplication._id%>33" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                                            <span>Cover Letter</span>
+                                                                            </a>
+                                                                        </td>
+                                                                     </div>
+                                                                   
+                                                                    <td>
+                                                                            <!-- <div  class="wt-btnarea" >
+                                                                                    <a href="/companyPost/hireUser/<%=user.userApplication._id%>/<%=user.postID%>"   class="badge badge-dark">Hire Now</a>
+                                                                            </div> -->
+                                                                            <!-- <form action="/companyPost/compAddToShortlList/<%=user.userApplication._id%>/<%=user.postID%>" method="POST">
+                                                                                <button type="submit"  class="badge  badge-info" >Add To Short List </button>
+                                                                              </form> -->
+                                                                    </td>
+                                                                </tr>
+                                                                <div class="wt-btnarea">
+                                                                    <div class="collapse" id="<%=user.userApplication._id%>33"> 
+                                                                        <div class="card card-body">
+                                                                        <span><%=user.comment%></span>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                           <%}%>
+                                                            </tbody>
+                                                            <%}%>
+
+                                                    </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="wt-haslayout wt-dbsectionspace collapse"  id="collapseExample2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 ">
+                                        <div class="wt-dashboardbox wt-dashboardinvocies">
+                                            <div class="wt-dashboardboxtitle wt-titlewithsearch">
+                                                <h2>CANCEL LIST</h2>
+                                            </div>
+                                            <div class="wt-dashboardboxcontent wt-categoriescontentholder wt-categoriesholder">
+                                                    <table class="wt-tablecategories">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>
+                                                                    </th>
+                                                                    <th></th>
+                                                                    <th>Name </th>
+                                                                    <th>File Attatchment</th>
+                                                                    <th>Cover Letter</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <% for(let user of data){%>
+                                                                <tbody>
+                                                                    <%if(user.Status === "Canceld By Company"){%>
+                                                                    <tr>
+                                                                        <td>
+                                                                        </td>
+                                                                        <td>
+                                                                            <%if(user.userApplication.profilePhoto!=="null"){%>
+                                                                                <figure class="wt-userlistingimg">
+                                                                                        <img src="../assets/images/uploaded/<%=user.userApplication._id+'_profile.'+user.userApplication.profilePhoto.split('.')[1]%>" alt="img description"> 
+                                                                                    <!-- <img src="../../assets/images/uploaded/<%=user.userApplication._id%>" alt="image description" class="mCS_img_loaded"> -->
+                                                                                </figure>
+                                                                                <%}else{%>
+                                                                                <figure class="wt-userlistingimg">
+                                                                                        <img src="../../assets/images/user/userlisting/img-01.jpg" alt="image description" class="mCS_img_loaded">
+                                                                                </figure>
+                                                                                <%}%>
+                                                                        </td>
+                                                                        <td><h4> <a href="/userPage/<%=user.userApplication._id%>" class="badge badge-pill badge-warning"><%=user.userApplication.firstName%></a> </h3></td>
+                                                                            <div class="wt-hireduserstatus">
+                                                                              <td>
+                                                                           
+                                                                                <i class="far fa-paperclip"></i>
+                                                                               <a href="/../assets/attachment/<%=user.userApplication._id+user.Date +'.'+user.fileExtention%>"> 
+                                                                                <span> file attached</span>
+                                                                              </a>
+                                                                        
+                                                                            </td>
+                                                                          </div>
+                                                                          <div class="wt-hireduserstatus">
+                                                                            <td>
+                                                                                 <i class="far fa-envelope"></i>
+                                                                                 <a data-toggle="collapse" href="#<%=user.userApplication._id%>33" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                                                <span>Cover Letter</span>
+                                                                                </a>
+                                                                            </td>
+                                                                         </div>
+                                                                       
+                                                                        <td>
+                                                                                <div  class="wt-btnarea" >
+                                                                                        <a href="/companyPost/hireUser/<%=user.userApplication._id%>/<%=user.postID%>"   class="badge badge-dark">Hire Now</a>
+                                                                                </div>
+                                                                                <form action="/companyPost/compAddToShortlList/<%=user.userApplication._id%>/<%=user.postID%>" method="POST">
+                                                                                    <button type="submit"  class="badge  badge-info" >Add To Short List </button>
+                                                                                  </form>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <div class="wt-btnarea">
+                                                                        <div class="collapse" id="<%=user.userApplication._id%>33"> 
+                                                                            <div class="card card-body">
+                                                                            <span><%=user.comment%></span>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                               <%}%>
+                                                                </tbody>
+                                                                <%}%>
+    
+                                                        </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                         
+                        <section class="wt-haslayout wt-dbsectionspace collapse"  id="collapseExample5">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 ">
+                                    <div class="wt-dashboardbox wt-dashboardinvocies">
+                                        <div class="wt-dashboardboxtitle wt-titlewithsearch">
+                                            <h2>HAIRED LIST</h2>
+                                        </div>
+                                        <div class="wt-dashboardboxcontent wt-categoriescontentholder wt-categoriesholder">
+                                                <table class="wt-tablecategories">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                </th>
+                                                                <th></th>
+                                                                <th>Name </th>
+                                                                <th>File Attatchment</th>
+                                                                <th>Cover Letter</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <% for(let user of data){%>
+                                                            <tbody>
+                                                                <%if(user.Status=== "HAIRED"){%>
+                                                                <tr>
+                                                                    <td>
+                                                                    </td>
+                                                                    <td>
+                                                                        <%if(user.userApplication.profilePhoto!=="null"){%>
+                                                                            <figure class="wt-userlistingimg">
+                                                                                    <img src="../assets/images/uploaded/<%=user.userApplication._id+'_profile.'+user.userApplication.profilePhoto.split('.')[1]%>" alt="img description"> 
+                                                                                <!-- <img src="../../assets/images/uploaded/<%=user.userApplication._id%>" alt="image description" class="mCS_img_loaded"> -->
+                                                                            </figure>
+                                                                            <%}else{%>
+                                                                            <figure class="wt-userlistingimg">
+                                                                                    <img src="../../assets/images/user/userlisting/img-01.jpg" alt="image description" class="mCS_img_loaded">
+                                                                            </figure>
+                                                                            <%}%>
+                                                                    </td>
+                                                                    <td><h4> <a href="/userPage/<%=user.userApplication._id%>" class="badge badge-pill badge-warning"><%=user.userApplication.firstName%></a> </h3></td>
+                                                                        <div class="wt-hireduserstatus">
+                                                                          <td>
+                                                                       
+                                                                            <i class="far fa-paperclip"></i>
+                                                                           <a href="/../assets/attachment/<%=user.userApplication._id+user.Date +'.'+user.fileExtention%>"> 
+                                                                            <span> file attached</span>
+                                                                          </a>
+                                                                    
+                                                                        </td>
+                                                                      </div>
+                                                                      <div class="wt-hireduserstatus">
+                                                                        <td>
+                                                                             <i class="far fa-envelope"></i>
+                                                                             <a data-toggle="collapse" href="#<%=user.userApplication._id%>33" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                                            <span>Cover Letter</span>
+                                                                            </a>
+                                                                        </td>
+                                                                     </div>
+                                                                   
+                                                                    <td>
+                                                                            <!-- <div  class="wt-btnarea" >
+                                                                                    <a href="/companyPost/hireUser/<%=user.userApplication._id%>/<%=user.postID%>"   class="badge badge-dark">Hire Now</a>
+                                                                            </div>
+                                                                            <form action="/companyPost/compAddToShortlList/<%=user.userApplication._id%>/<%=user.postID%>" method="POST">
+                                                                                <button type="submit"  class="badge  badge-info" >Add To Short List </button>
+                                                                              </form> -->
+                                                                    </td>
+                                                                </tr>
+                                                                <div class="wt-btnarea">
+                                                                    <div class="collapse" id="<%=user.userApplication._id%>33"> 
+                                                                        <div class="card card-body">
+                                                                        <span><%=user.comment%></span>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                           <%}%>
+                                                            </tbody>
+                                                            <%}%>
+
+                                                    </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+            <section class="wt-haslayout wt-dbsectionspace wt-proposals">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
+                        <div class="wt-dashboardbox">
+                            <div class="wt-dashboardboxtitle">
+                                <h2>Ongoing Jobs</h2>
+                            </div>
+                            <div class="wt-dashboardboxcontent wt-rcvproposala">
+                                <!-- <div class="wt-userlistinghold wt-featured wt-userlistingvtwo">
+                                    <span class="wt-featuredtag wt-featuredtagcolor3"><img src="../assets/images/featured.png" alt="img description" data-tipso="Plus Member" class="template-content tipso_style mCS_img_loaded"></span>
+                                    <div class="wt-userlistingcontent">
+                                        <div class="wt-contenthead">
+                                            <div class="wt-title">
+                                                <a href="usersingle.html"><i class="fa fa-check-circle"></i> Terrence Tynan
+                                                </a>
+                                                <h2>Change temp to Arabic and install on wordpress</h2>
+                                            </div>
+                                            <ul class="wt-saveitem-breadcrumb wt-userlisting-breadcrumb">
+                                                <li><span class="wt-dashboraddoller"><i class="fa fa-dollar-sign"></i> Professional</span></li>
+                                                <li><span><img src="../assets/images/flag/img-04.png" alt="img description" class="mCS_img_loaded"> England</span></li>
+                                                <li><a href="javascript:void(0);" class="wt-clicksavefolder"><i class="far fa-folder"></i> Type: Per Fixed</a></li>
+                                                <li><span class="wt-dashboradclock"><i class="far fa-clock"></i> Duration: 15 Days</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="wt-rightarea">
+                                            <div class="wt-hireduserstatus">
+                                                <h4>06</h4><span>Proposals Received</span>
+                                                <ul class="wt-hireduserimgs">
+                                                    <li><figure><img src="../assets/images/user/userlisting/img-02.jpg" alt="img description" class="mCS_img_loaded"></figure></li>
+                                                    <li><figure><img src="../assets/images/user/userlisting/img-03.jpg" alt="img description" class="mCS_img_loaded"></figure></li>
+                                                    <li><figure><img src="../assets/images/user/userlisting/img-01.jpg" alt="img description" class="mCS_img_loaded"></figure></li>
+                                                    <li><figure><img src="../assets/images/user/userlisting/img-02.jpg" alt="img description" class="mCS_img_loaded"></figure></li>
+                                                    <li><figure><img src="../assets/images/user/userlisting/img-05.jpg" alt="img description" class="mCS_img_loaded"></figure></li>
+                                                    <li><figure><img src="../assets/images/user/userlisting/img-01.jpg" alt="img description" class="mCS_img_loaded"></figure></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>	
+                                </div> -->
+                                <div class="wt-freelancerholder wt-rcvproposalholder">
+                                    <div class="wt-tabscontenttitle">
+                                        <h2>Received Proposals</h2>
+                                    </div>
+                                    
+                                    <div class="wt-managejobcontent">
+                                            <% for(let user of data){%>
+                                       <div class="wt-userlistinghold wt-featured wt-proposalitem">
+                                            <!-- <span class="wt-featuredtag"><img src="../../assets/images/featured.png" alt="img description" data-tipso="Plus Member" class="template-content tipso_style mCS_img_loaded"></!-->
+                                                <%if(user.userApplication.profilePhoto!=="null"){%>
+                                            <figure class="wt-userlistingimg">
+                                                    <img src="../assets/images/uploaded/<%=user.userApplication._id+'_profile.'+user.userApplication.profilePhoto.split('.')[1]%>" alt="img description"> 
+                                                <!-- <img src="../../assets/images/uploaded/<%=user.userApplication._id%>" alt="image description" class="mCS_img_loaded"> -->
+                                            </figure>
+                                            <%}else{%>
+                                            <figure class="wt-userlistingimg">
+                                                    <img src="../../assets/images/user/userlisting/img-01.jpg" alt="image description" class="mCS_img_loaded">
+                                            </figure>
+                                            <%}%>
+                                            <div class="wt-proposaldetails">
+                                                <div class="wt-contenthead">
+                                                    <div class="wt-title">
+                                                        <a href="/userPage/<%=user.userApplication._id%>"> <%=user.userApplication.firstName%> </a>
+                                                    </div>
+                                                </div>
+                                                <div class="wt-proposalfeedback">
+                                                    <span class="wt-starsvtwo">
+                                                        <i class="fa fa-star fill"></i>
+                                                    </span>
+                                                    <span class="wt-starcontent"> 4.5/<i>5</i> <em> (860 Feedback)</em></span>
+                                                </div>													
+                                            </div>
+                                            <div class="wt-rightarea">
+                                            <div  class="wt-btnarea" style="margin-right: 6px;">
+                                                    <a href="/companyPost/hireUser/<%=user.userApplication._id%>/<%=user.postID%>"   class="badge badge-primary">Hire Now</a>
+                                            </div>
+                                               
+                                                <div class="wt-btnarea" style="margin-right: 5px;">
+                                                    <form action="/companyPost/compAddToCancelList/<%=user.userApplication._id%>/<%=user.postID%>" method="POST">
+                                                        <!-- <input type="submit" class="btn btn-danger" value="Add To Cancel List"  > -->
+                                                        <button type="submit"  class="badge  badge-danger" >Add To Cancel List </button>
+                                                    </form>
+                                                       <!-- <a href="/companyPost/compAddToCancelList/<%=user.userApplication._id%>/<%=user.postID%>" class="btn btn-danger">Add To Cancel List</a> -->
+                                                </div>
+                                                <div class="wt-btnarea" style="margin-right: 5px;">
+                                                    <form action="/companyPost/compAddToShortlList/<%=user.userApplication._id%>/<%=user.postID%>" method="POST">
+                                                      <button type="submit"  class="badge  badge-dark" >Add To Short List </button>
+                                                    </form>
+                                                        <!-- <a href="/companyPost/hireUser/<%=user.userApplication._id%>/<%=user.postID%>" class="btn btn-dark">Add To Short List</a> -->
+                                                </div>
+                                                <div class="wt-hireduserstatus">
+                                                        <i class="far fa-paperclip"></i>
+                                                       <a href="/../assets/attachment/<%=user.userApplication._id+user.Date +'.'+user.fileExtention%>"> 
+                                                        <span> file attached</span>
+                                                      </a>
+                                                </div>
+                                                
+                                                    <div class="wt-hireduserstatus">
+                                                      <i class="far fa-envelope"></i>
+                                                       <a data-toggle="collapse" href="#<%=user.userApplication._id%>" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                      <span>Cover Letter</span>
+                                                      </a>
+                                                      </div>
+                                                      <div class="wt-btnarea" >
+                                                     <div class="collapse" id="<%=user.userApplication._id%>"  style="margin-left: 20px;">
+                                                        <div class="card card-body">
+                                                        <span><%=user.comment%></span>
+                                                        </div>
+                                                      </div> 
+                                                    </div>
+                                                									
+                                            </div>
+                                        </div>
+                                        <%}%>
+                                    </div>										
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      
+            <!--Register Form End-->
+        </main>
+    </div>
+        <!--Main End-->
+<!--Wrapper End-->
+<script src="assets/js/vendor/jquery-3.3.1.js"></script>
+<script src="assets/js/vendor/jquery-library.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/chosen.jquery.js"></script>
+<script src="assets/js/tilt.jquery.js"></script>
+<script src="assets/js/scrollbar.min.js"></script>
+<script src="assets/js/prettyPhoto.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/readmore.js"></script>
+<script src="assets/js/countTo.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/tipso.js"></script>
+<script src="assets/js/jRate.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    const menu_icon = document.querySelector('.menu-icon');
+    function addClassFunThree() {
+        this.classList.toggle("click-menu-icon");
+    }
+    menu_icon.addEventListener('click', addClassFunThree);
+</script>
+</body>
+</html>

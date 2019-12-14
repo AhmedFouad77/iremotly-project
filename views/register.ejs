@@ -1,0 +1,156 @@
+<% include partials/header2.ejs %>
+
+<!--Inner Home Banner Start-->
+<div class="wt-haslayout wt-innerbannerholder">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-xs-12 col-sm-12 col-md-8 push-md-2 col-lg-6 push-lg-3">
+                <div class="wt-innerbannercontent">
+                <div class="wt-title"><h2>Join Now For FREE</h2></div>
+                <ol class="wt-breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="wt-active">Join Now</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Inner Home End-->
+<!--Main Start-->
+<main id="wt-main" class="wt-main wt-haslayout wt-innerbgcolor">
+    <!--Register Form Start-->
+    <div class="wt-haslayout wt-main-section">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-xs-12 col-sm-12 col-md-10 push-md-1 col-lg-8 push-lg-2">
+                    <div class="wt-registerformhold">
+                        <div class="wt-registerformmain">
+                            <div class="wt-registerhead">
+                                <div class="wt-title">
+                                    <h3>Join For a Good Start</h3>
+                                    <h3></h3>
+                                </div>
+                                <div class="wt-description">
+                                    <p>Consectetur adipisicing elit sed dotem eiusmod tempor incune utnaem labore etdolore maigna aliqua enim poskina</p>
+                                </div>
+                            </div>
+                            <div class="wt-joinforms">
+                         
+                                <form class="wt-formtheme wt-formregister" action="/user/signUp" method="POST" onsubmit="return checkForm(this);">
+                                    <fieldset class="wt-registerformgroup">
+                                        <div class="form-group wt-form-group-dropdown form-group-half">
+                                          
+                                           <!-- 
+                                                <span class="wt-select">
+                                                <select>
+                                                    <option>mr.</option>
+                                                    <option>mrs</option>
+                                                </select>
+                                            </span>
+                                           -->
+                                            <!-- <input type="text" class="wt-select" name="title" id="title" placeholder="Mr" autocomplete="off" > -->
+                                            <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name" required>
+                                            <small id="firstNameError" class="text-danger"></small>
+                                        </div>
+                                        <div class="form-group form-group-half">
+                                            <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last Name" required>
+                                            <small id="lastNameError" class="text-danger"></small>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="email" id="email" class="form-control" placeholder="Email"required >
+                                            <small id="emailError" class="text-danger"><%=err%></small>
+                                           
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                                <span class="wt-select">
+                                                    <select name="country" id="country">
+                                                        <option disabled selected>-- Select Country --</option>
+                                                        <%for(var x=0;x<Countries.length;x++){%>
+                                                            <option value="<%=Countries[x].name%>"><%=Countries[x].name%></option>
+                                                            <%}%>
+                                                    </select>
+                                                </span>
+                                                <small id="countryError" class="text-danger"></small>
+                                        </div>
+                                        <div class="form-group form-group-half">
+                                            <input type="password" name="password" id="password" class="form-control" onfocus="checkPass(); "  onblur="" required placeholder="Password*" >
+                                            <small id="whenPass" class="text-success"></small>
+                                        </div>
+                                        <div class="form-group form-group-half">
+                                            <input type="password" name="confirmPassword" id="confirmPassword"  class="form-control" placeholder="Retype Password*" required>
+                                            <small class="text-danger" id="error-nwl"><%=msg%></small>
+                                        </div>
+                                        
+                                        </fieldset>
+                                        <fieldset class="wt-formregisterstart">
+                                            <div class="wt-title wt-formtitle"><h4>Start as :</h4></div>
+                                            <ul class="wt-accordionhold wt-formaccordionhold accordion">
+                                                <li>
+                                                    <div class="wt-accordiontitle" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
+                                                        <span class="wt-radio">
+                                                            <input id="wt-company" type="radio" name="type" value="company" checked>
+                                                            <label for="wt-company">Company<span> (Signup as company/service seeker &amp; post jobs)</span></label>
+                                                        </span>
+                                                    </div>
+                                                   
+                                                </li>
+                                                <li>
+                                                    <div class="wt-accordiontitle">
+                                                        <span class="wt-radio">
+                                                            <input id="wt-freelancer" type="radio" name="type" value="employee">
+                                                            <label for="wt-freelancer">Freelancer <span>(Signup as freelancer &amp; get hired)</span></label>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                        <fieldset class="wt-termsconditions">
+                                            <div class="wt-checkboxholder">
+                                                <span class="wt-checkbox">
+                                                    <input id="termsconditions" type="checkbox" name="termsconditions" value="termsconditions" checked>
+                                                    <label for="termsconditions"><span>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis.</span></label>
+                                                </span>
+                                                <span class="wt-checkbox">
+                                                    <input id="termsconditions2" type="checkbox" name="termsconditions" value="termsconditions">
+                                                    <label for="termsconditions2"><span>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse<a href="javascrip:void(0);"> Terms &amp; Conditions</a></span></label>
+                                                </span>
+                                                <div class="form-group">
+                                                    <input type="submit" disabled id="registerButton" value="Register" class="btn btn-lg btn-danger float-right wt-btn"  />
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                </form>
+                                <!-- 
+                                    <div class="wt-joinnowholder">
+                                    <div class="wt-title">
+                                        <h4>Join Now With</h4>
+                                    </div>
+                                    <div class="wt-description">
+                                        <p>Use a social account for faster login or easy registration to directly get in to your account and start a good business</p>
+                                    </div>
+                                    <ul class="wt-socialicons wt-iconwithtext">
+                                        <li class="wt-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook-f"></i><em>Facebook</em></a>
+                                        </li>
+                                        <li class="wt-twitter"><a href="javascript:void(0);"><i class="fab fa-twitter"></i><em>Twitter</em></a></li>
+                                        <li class="wt-googleplus"><a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i><em>Google</em></a></li>
+                                        <li class="wt-instagram"><a href="javascript:void(0);"><i class="fab fa-instagram"></i><em>Instagram</em></a></li>
+                                    </ul>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                        <div class="wt-registerformfooter">
+                            <span>Already Have an Account? <a href="javascript:void(0);">Login Now</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Register Form End-->
+</main>
+<!--Main End-->
+
+<% include partials/footer.ejs %>

@@ -1,0 +1,15 @@
+<% include partials/header2.ejs %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form action="/category/addPage" method="POST">
+                <div class="form-group">
+                    <input type="text" name="categoryTitle" class="form-control" placeholder="Add Category">
+                    <input type="submit" value="Add Category" class="btn btn-lg float-right">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer.ejs %>

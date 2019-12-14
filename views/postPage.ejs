@@ -1,0 +1,464 @@
+<% include partials/header3.ejs %>
+
+    <!--Main Start-->
+    <main id="wt-main" class="wt-main wt-haslayout">
+        <!--Sidebar Start-->
+        <div id="wt-sidebarwrapper" class="wt-sidebarwrapper">
+            <div id="wt-btnmenutoggle" class="wt-btnmenutoggle">
+                <span class="menu-icon">
+                <em></em>
+                <em></em>
+                <em></em>
+            </span>
+            </div>
+            <div id="wt-verticalscrollbar" class="wt-verticalscrollbar">
+                <div class="wt-companysdetails wt-usersidebar">
+                    <figure class="wt-companysimg">
+                        <img src="../assets/images/sidebar/img-01.jpg" alt="img description">
+                    </figure>
+                    <div class="wt-companysinfo">
+                        <figure><img src="../assets/images/sidebar/img-02.jpg" alt="img description"></figure>
+                        <div class="wt-title">
+                            <h2><a href="javascript:void(0);"> Louanne Mattioli</a></h2>
+                            <span>Amento Tech</span>
+                        </div>
+                        <div class="wt-btnarea"><a href="/companyPost/" class="wt-btn">Post a Job</a></div>
+                    </div>
+                </div>
+                <nav id="wt-navdashboard" class="wt-navdashboard">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="javascript:void(0);">
+                                <i class="ti-dashboard"></i>
+                                <span>Insights</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <hr><a href="dashboard-insights.html">Insights</a></li>
+                                <li>
+                                    <hr><a href="dashboard-insightsuser.html">Insights User</a></li>
+                            </ul>
+                        </li>
+                        <li class="wt-active">
+                            <a href="dashboard-profile.html">
+                                <i class="ti-briefcase"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="javascript:void(0);">
+                                <i class="ti-package"></i>
+                                <span>All Jobs</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <hr><a href="dashboard-completejobs.html">Completed Jobs</a></li>
+                                <li>
+                                    <hr><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li>
+                                <li>
+                                    <hr><a href="dashboard-ongoingjob.html">Ongoing Jobs</a></li>
+                                <li>
+                                    <hr><a href="dashboard-ongoingsingle.html">Ongoing Single</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="dashboard-managejobs.html">
+                                <i class="ti-announcement"></i>
+                                <span>Manage Jobs</span>
+                            </a>
+                        </li>
+                        <li class="wt-notificationicon menu-item-has-children">
+                            <a href="javascript:void(0);">
+                                <i class="ti-pencil-alt"></i>
+                                <span>Messages</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <hr><a href="dashboard-messages.html">Messages</a></li>
+                                <li>
+                                    <hr><a href="dashboard-messages2.html">Messages V 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="dashboard-saveitems.html">
+                                <i class="ti-heart"></i>
+                                <span>My Saved Items</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard-invocies.html">
+                                <i class="ti-file"></i>
+                                <span>Invoices</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/category/addPage">
+                                <i class="ti-layers"></i>
+                                <span>Category</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard-packages.html">
+                                <i class="ti-money"></i>
+                                <span>Packages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard-proposals.html">
+                                <i class="ti-bookmark-alt"></i>
+                                <span>Proposals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard-accountsettings.html">
+                                <i class="ti-anchor"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard-helpsupport.html">
+                                <i class="ti-tag"></i>
+                                <span>Help &amp; Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="ti-shift-right"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="wt-navdashboard-footer">
+                    <span>Worktern. © 2019 All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+        <!--Sidebar Start-->
+        <!--Register Form Start-->
+        <section class="wt-haslayout wt-dbsectionspace">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-6 float-left">
+                    <div class="wt-dashboardbox">
+                        <div class="wt-dashboardboxtitle">
+                            <h2>Post a Job</h2>
+                        </div>
+                        <div class="wt-dashboardboxcontent">
+                            <div class="wt-jobdescription wt-tabsinfo">
+                                <div class="wt-tabscontenttitle">
+                                    <h2>Job Description</h2>
+                                </div>
+                            </div>
+
+<!-- Start The Form -->
+                                <form class="wt-formtheme wt-userform wt-userformvtwo" action="/companyPost/save" method="POST">
+                                    <div class="form-group ">
+                                    <input type="text" id="jobTitle" name="jobTitle" class="form-control" placeholder="Job Title">
+                                </div>
+                                
+                                        
+                                        <div class="form-group form-group-half wt-formwithlabel">
+                                            <span class="wt-select">
+                                                                <!-- <label for="selectoption">Service Level:</label> -->
+                                                                <span>Service Level :</span> 
+                                                                <select name="serviceLevel" >
+                                                                    <option value="Professional">Professional</option>
+                                                                    <option value="intermedite">Intermedite</option>
+                                                                    <option value="beginner">Begginer</option>
+                                                                </select>
+                                                            </span>
+                                        </div>
+                                        <div class="form-group form-group-half wt-formwithlabel">
+                                                <span class="wt-select">
+                                                                    <!-- <label for="selectoption">Enter English : </label> -->
+                                                                    <span>English Level :</span> 
+                                                                    <select id="selectoption" name="english">
+                                                                        <option value="Good"> Good</option>
+                                                                        <option value="very good"> Very Good</option>
+                                                                        <option value="Profational"> Profational</option>
+                                                                    </select>
+                                                                </span>
+                                            </div>
+                                      
+                                        <div class="form-group form-group-half wt-formwithlabel">
+                                            <!-- <span class="wt-select"> -->
+                                                                <!-- <label for="selectoption">Job Type:</label> -->
+                                                                <!-- <select>
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Fixed</option>
+                                                                </select> -->
+                                                                <span >Job Type : </span>
+                                                            <input type="text" class="form-group " name="jobType" placeholder=" Enter Job Type:"/>
+                                                            <!-- </span> -->
+                                        </div>
+                                        <div class="form-group form-group-half wt-formwithlabel">
+                                            <!-- <span class="wt-select"> -->
+                                                               
+                                                                <!-- <select>
+                                                                    <option value="">02 Weeks</option>
+                                                                    <option value="">03 Weeks</option>
+                                                                </select> -->
+                                                                 <span >Job Duration:</span>
+                                                                <input type="text" class="form-group " name="jobDuration" placeholder="Enter Job Duration:"/>
+                                                            <!-- </span> -->
+                                        </div>
+                                            <!-- <div class="form-group form-group-half wt-formwithlabel">
+                                                <span class="wt-select">
+                                                        <label for="selectoption">Sex Required: </label>
+                                                                    <select id="selectoption" name="sexRequired">
+                                                                        <option value="Male">Male</option>
+                                                                        <option value="Fmale">Fmale</option>
+                                                                    </select>
+                                                </span>
+                                            </div> -->
+                                      
+                                      <!-- <div class="form-group form-group-half wt-formwithlabel">
+                                                   <input type="text" class="form-group " name="ageRequired" placeholder="Age Required :"/>
+                                            </div> -->
+                                            <div class="form-group form-group-half wt-formwithlabel">
+                                                    <span class="wt-select" >  
+                                                         <span>Years Of Experience :</span> 
+                                                          <input type="number" class="form-group " name="yearsOfExperience" placeholder="Enter Years Of Experience :"/></span>
+                                                </div>
+                                            <div class="form-group form-group-half wt-formwithlabel">
+                                              <span class="wt-select">
+                                                        <span >Salary : </span>
+                                                         <input type="number" class="form-group " name="Salary" placeholder="Enter Salary :"/>
+                                              </span>
+                                           </div>
+                                           <div class="form-group form-group-half wt-formwithlabel">
+                                                <span >Age Required : </span>
+                                                
+                                                <span>From</span>
+                                                <input type="number" name="ageFrom" class="form-control"/>
+                                                
+
+                                         </div>     
+
+                                        <div class="form-group form-group-half wt-formwithlabel">
+                                            <span>To</span>
+                                            <input type="number" name="ageTo" class="form-control"/>
+                                        </div>
+
+
+                                        <div class="wt-jobdetails wt-tabsinfo">
+                                                <div class="wt-tabscontenttitle">
+                                                    <h2>Job Details</h2>
+                                                </div>
+                                                <fieldset>
+
+                                                        <div class="form-group" id="content" name="content">
+                                                                <!-- <label for="exampleFormControlTextarea3">Add Job Detail</label> -->
+                                                                <textarea class="form-control" id="content"  name="content" rows="7"  placeholder="Add Job Detail Here"></textarea>
+                                                              </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="wt-jobdetails wt-tabsinfo">
+                                                    <div class="wt-tabscontenttitle">
+                                                        <h2>Job Requirement</h2>
+                                                    </div>
+                                                    <fieldset>
+    
+                                                            <div class="form-group" id="content" name="qualificationRequired">
+                                                                    <!-- <label for="exampleFormControlTextarea3">Add Job Detail</label> -->
+                                                                    <textarea class="form-control" id="content"  name="qualificationRequired" rows="7"  placeholder="Add Job Requirement Here"></textarea>
+                                                                  </div>
+                                                    </fieldset>
+                                                </div>
+                                            <div class="wt-jobskills wt-tabsinfo">
+                                                <div class="wt-tabscontenttitle">
+                                                    <h2>Skills Required</h2>
+                                                </div>
+                                                <fieldset>
+                                                    <div  class="form-group">
+                                                            <select class="chosen-select Skills" data-placeholder="Skills"  name="Skills" multiple>
+                                                                    <option  value="Website Design">Website Design</option>
+                                                                    <option  value="PHP"            >PHP</option>
+                                                                    <option  value="HTML 5"         >HTML 5</option>
+                                                                    <option  value="Graphic Design" >Graphic Design</option>
+                                                                    <option  value="SEO"            >SEO</option>
+                                                                    <option  value="Bootstrap"      >Bootstrap</option>
+                                                                </select>
+                                                    </div>
+                                                    <!-- <div class="form-group">
+                                                        <select class="chosen-select Skills" data-placeholder="Skills" name="Skills" multiple>
+                                                                        <option name="Skills" value="Website Design">Website Design</option>
+                                                                        <option name="Skills" value="PHP">PHP</option>
+                                                                        <option name="Skills" value="HTML 5">HTML 5</option>
+                                                                        <option name="Skills" value="Graphic Design">Graphic Design</option>
+                                                                        <option name="Skills" value="SEO">SEO</option>
+                                                                        <option name="Skills" value="Bootstrap">Bootstrap</option>
+                                                                    </select>
+                                                    </div> -->
+                                                    <div class="form-group wt-btnarea">
+                                                        <a href="javascript:void(0);" class="wt-btn">Add Skills</a>
+                                                    </div>
+                                                    <div class="form-group wt-myskills">
+                                                        <ul class="">
+                                                            <li>
+                                                                <div class="wt-dragdroptool">
+                                                                    <a href="javascript:void(0)" class="lnr lnr-menu"></a>
+                                                                </div>
+                                                                <span class="skill-dynamic-html">PHP (<em class="skill-val">90</em>%)</span>
+                                                                <span class="skill-dynamic-field">
+                                                                                <input type="text" name="skills[1][percentage]" value="90">
+                                                                            </span>
+                                                                <div class="wt-rightarea">
+                                                                    <a href="javascript:void(0);" class="wt-deleteinfo"><i class="lnr lnr-trash"></i></a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div class="wt-dragdroptool">
+                                                                    <a href="javascript:void(0)" class="lnr lnr-menu"></a>
+                                                                </div>
+                                                                <span class="skill-dynamic-html">Website Design (<em class="skill-val">90</em>%)</span>
+                                                                <span class="skill-dynamic-field">
+                                                                                <input type="text" name="skills[1][percentage]" value="90">
+                                                                            </span>
+                                                                <div class="wt-rightarea">
+                                                                    <a href="javascript:void(0);" class="wt-deleteinfo"><i class="lnr lnr-trash"></i></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="wt-dragdroptool handle">
+                                                                    <a href="javascript:void(0)" class="lnr lnr-menu"></a>
+                                                                </div>
+                                                                <span class="skill-dynamic-html">HTML 5 (<em class="skill-val">90</em>%)</span>
+                                                                <span class="skill-dynamic-field">
+                                                                                <input type="text" name="skills[1][percentage]" value="90">
+                                                                            </span>
+                                                                <div class="wt-rightarea">
+                                                                    <a href="javascript:void(0);" class="wt-deleteinfo"><i class="lnr lnr-trash"></i></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="wt-dragdroptool handle">
+                                                                    <a href="javascript:void(0)" class="lnr lnr-menu"></a>
+                                                                </div>
+                                                                <span class="skill-dynamic-html">Graphic Design (<em class="skill-val">80</em>%)</span>
+                                                                <span class="skill-dynamic-field">
+                                                                                <input type="text" name="skills[1][percentage]" value="90">
+                                                                            </span>
+                                                                <div class="wt-rightarea">
+                                                                    <a href="javascript:void(0);" class="wt-deleteinfo"><i class="lnr lnr-trash"></i></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="wt-dragdroptool handle">
+                                                                    <a href="javascript:void(0)" class="lnr lnr-menu"></a>
+                                                                </div>
+                                                                <span class="skill-dynamic-html">Rate Your Skill (<em class="skill-val">10</em>%)</span>
+                                                                <span class="skill-dynamic-field">
+                                                                                <input type="text" name="skills[1][percentage]" value="90">
+                                                                            </span>
+                                                                <div class="wt-rightarea">
+                                                                    <a href="javascript:void(0);" class="wt-deleteinfo"><i class="lnr lnr-trash"></i></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="wt-dragdroptool handle">
+                                                                    <a href="javascript:void(0)" class="lnr lnr-menu"></a>
+                                                                </div>
+                                                                <span class="skill-dynamic-html">SEO (<em class="skill-val">35</em>%)</span>
+                                                                <span class="skill-dynamic-field">
+                                                                                <input type="text" name="skills[1][percentage]" value="90">
+                                                                            </span>
+                                                                <div class="wt-rightarea">
+                                                                    <a href="javascript:void(0);" class="wt-deleteinfo"><i class="lnr lnr-trash"></i></a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="wt-attachmentsholder">
+                                                    <div class="wt-tabscontenttitle">
+                                                        <h2>Attachments</h2>
+                                                        <div class="wt-rightarea">
+                                                            <span>Show “Attachments” after hiring</span>
+                                                            <div class="wt-on-off float-right">
+                                                                <input type="checkbox" id="hide-on" name="contact_form">
+                                                                <label for="hide-on"><i></i></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <fieldset>
+                                                        <div class="form-group form-group-label">
+                                                            <div class="wt-labelgroup">
+                                                                <label for="file">
+                                                                                <span class="wt-btn">Select Files</span>
+                                                                                <input type="file" name="file" id="file">
+                                                                            </label>
+                                                                <span>Drop files here to upload</span>
+                                                                <em class="wt-fileuploading">Uploading<i class="fa fa-spinner fa-spin"></i></em>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <ul class="wt-attachfile">
+                                                                <li class="wt-uploading">
+                                                                    <span class="uploadprogressbar"></span>
+                                                                    <span>Wireframe Document.doc</span>
+                                                                    <em>File size: 512 kb<a href="javascript:void(0);" class="lnr lnr-cross"></a></em>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="uploadprogressbar"></span>
+                                                                    <span>Requirments.pdf</span>
+                                                                    <em>File size: 110 kb<a href="javascript:void(0);" class="lnr lnr-cross"></a></em>
+                                                                </li>
+                                                                <li class="wt-uploaded">
+                                                                    <span class="uploadprogressbar"></span>
+                                                                    <span>Company Intro.docx</span>
+                                                                    <em>File size: 224 kb<a href="javascript:void(0);" class="lnr lnr-cross"></a></em>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wt-updatall">
+                                                <i class="ti-announcement"></i>
+                                                <span>Post job by just clicking on “Post Job Now” button.</span>
+                                                <input type="submit" class="wt-btn" name='postJopNow' id="postJopNow" value="Post Job Now" />
+                                            </div>
+                                </form>
+                             
+<!-- End The Form -->
+                               
+                           
+                            
+                      
+                   
+                </div>
+            </div>
+        </section>
+        <!--Register Form End-->
+    </main>
+    <!--Main End-->
+    <!-- </div> -->
+    <!--Content Wrapper End-->
+    <!-- </div> -->
+    <!--Wrapper End-->
+    <script src="../assets/js/vendor/jquery-3.3.1.js"></script>
+    <script src="../assets/js/vendor/jquery-library.js"></script>
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/chosen.jquery.js"></script>
+    <script src="../assets/js/scrollbar.min.js"></script>
+    <script src="../assets/js/tilt.jquery.js"></script>
+    <script src="../assets/js/prettyPhoto.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/readmore.js"></script>
+    <script src="../assets/js/countTo.js"></script>
+    <script src="../assets/js/appear.js"></script>
+    <script src="../assets/js/tipso.js"></script>
+    <script src="../assets/js/jRate.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
+
+
+
+    <% include partials/footer2.ejs %>
+        </body>
+        </html>

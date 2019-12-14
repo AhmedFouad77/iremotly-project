@@ -1,0 +1,291 @@
+<!--Main End-->
+			<!--Footer Start-->
+			<footer id="wt-footer" class="wt-footer wt-haslayout">
+				<div class="wt-footerholder wt-haslayout">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="wt-footerlogohold">
+									<strong class="wt-logo"><a href="index.html"><img src="../assets/images/logo.png" alt="company logo here"></a></strong>
+									<div class="wt-description">
+										<p>Dotem eiusmod tempor incune utnaem labore etdolore maigna aliqua enim poskina ilukita ylokem lokateise ination voluptate velit esse cillum dolore eu fugiat nulla pariatur lokaim urianewce 
+											<a href="/about">more...</a>
+										</p>
+									</div>
+									<ul class="wt-socialiconssimple wt-socialiconfooter">
+										<li class="wt-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a></li>
+										<li class="wt-twitter"><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+										<li class="wt-youtube"><a href="javascript:void(0);"><i class="fab fa-youtube"></i></a></li>
+										<li class="wt-instagram"><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
+										<li class="wt-googleplus"><a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+								<div class="wt-footercol wt-widgetcompany">
+									<div class="wt-fwidgettitle">
+										<h3>Company</h3>
+									</div>
+									<ul class="wt-fwidgetcontent">
+										<li><a href="/about">About Us</a></li>
+										<li><a href="/howitworks">How It Works</a></li>
+										
+										<li><a href="/privacyPolicy">privacy Policy</a></li>
+										
+									</ul>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+								<div class="wt-footercol wt-widgetexplore">
+									<div class="wt-fwidgettitle">
+										<h3>Explore More</h3>
+									</div>
+									<ul class="wt-fwidgetcontent">
+										<li><a href="/userlisting">Find Employees</a></li>
+										<li><a href="/joblisting">Find Jobs</a></li>
+										<li><a href="/companyGrid">Find Copmapnies</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wt-haslayout wt-joininfo">
+					<div class="container">
+						<div class="row justify-content-md-center">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 push-lg-1">
+								<div class="wt-companyinfo">
+									<span><a href="javascript:void(0);">New @ IRmotly?</a> Dotem eiusmod tempor incune utnaem labore etdolore.</span>
+								</div>
+								<%if(user==null){%>
+								<div class="wt-fbtnarea">
+									<a href="/user/signUp" class="wt-btn">Join Now</a>
+								</div>
+								<%}%>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wt-haslayout wt-footerbottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<p class="wt-copyrights"><span>IREMOTLY.</span> © 2018 All Rights Reserved.</p>
+								<nav class="wt-addnav">
+									<ul>
+										<li><a href="/about">About Us</a></li>
+										<li><a href="/howitworks">How It Works</a></li>
+										<li><a href="/privacyPolicy">Privacy Policy</a></li>
+										
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--Footer End-->
+		</div>
+		<!--Content Wrapper End-->
+	</div>
+	<!--Wrapper End-->
+	<script src="../assets/js/vendor/jquery-3.3.1.js"></script>
+	<script src="../assets/js/vendor/jquery-library.js"></script>
+	<script src="../assets/js/vendor/bootstrap.min.js"></script>
+	<script src="../assets/js/owl.carousel.min.js"></script>
+	<script src="../assets/js/chosen.jquery.js"></script>
+	<script src="../assets/js/scrollbar.min.js"></script>
+	<script src="../assets/js/tilt.jquery.js"></script>
+	<script src="../assets/js/prettyPhoto.js"></script>
+	<script src="../assets/js/jquery-ui.js"></script>
+	<script src="../assets/js/readmore.js"></script>
+	<script src="../assets/js/countTo.js"></script>
+	<script src="../assets/js/appear.js"></script>
+	<script src="../assets/js/tipso.js"></script>
+	<script src="../assets/js/jRate.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	
+	<script>
+
+	
+		//Enable Register Button After check terms
+		var ch1=document.getElementById("termsconditions");
+		var ch2=document.getElementById("termsconditions2");
+		$("#termsconditions2").click(function() {
+			
+			if (ch1.checked== true &&ch2.checked==true) {
+			$("#registerButton").removeAttr("disabled");
+			} else {
+			$("#registerButton").attr("disabled", "disabled");
+			}
+			});
+			$("#termsconditions").click(function() {
+			
+				if (ch1.checked== true &&ch2.checked==true) {
+				$("#registerButton").removeAttr("disabled");
+				} else {
+				$("#registerButton").attr("disabled", "disabled");
+				}
+			});
+
+
+
+		//Check password and confirm password
+		function checkForm(form)
+ 	 {
+		  var errMsg=document.getElementById("error-nwl");
+		  var countryError=document.getElementById("countryError");
+		  var messagefirst = document.getElementById('firstNameError');
+		  var messagelast = document.getElementById("lastNameError");
+		  var messageemail = document.getElementById("emailError");
+    if(form.password.value != "" && form.password.value == form.confirmPassword.value) {
+      if(form.password.value.length < 8) {
+        alert("Error: Password must contain at least 8 characters!");
+        form.password.focus();
+        return false;
+      }
+    
+      re = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$.!%*#?&])[A-Za-z\d@$.!%*#?&]{8,}$/;
+      if(!re.test(form.password.value)) {
+		errMsg.innerText="Error: password must contain at least one number (0-9) and one capital character and one symbol and small character!";
+		form.password.focus();
+        return false;
+      }
+   
+	}
+	 else {
+	  errMsg.innerText="Error: Please check that you've entered and confirmed your password correctly!";
+      form.password.focus();
+      return false;
+	}
+	if(form.country.value=="-- Select Country --"){
+		countryError.innerText="Country must be provided";
+		return false;
+	}
+	if(form.firstName.value==""){
+		
+		messagefirst.innerText="First Name Must  be  provided";
+		return false;
+	
+	}
+	if(form.lastName.value==""){
+		
+		messagelast.innerText="Last Name Must  be  provided";
+		return false;
+	}
+	if(form.email.value==""){
+		
+		messageemail.innerText="Last Name Must  be  provided";
+		return false;
+	}
+
+  
+    return true;
+  }
+
+//Fuction Give notes About Password
+  function checkPass()
+{
+    
+	var message = document.getElementById('whenPass');
+	message.innerText="password length must be at least 8 Character  and  contain at least one number (0-9) , one capital character , one symbol and small character"
+	
+} 
+
+
+
+// // scroll to top button //
+// //Get the button:
+// mybutton = document.getElementById("scrollToTop");
+
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
+
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//   document.body.scrollTop = 0; // For Safari
+//   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// }
+
+// function checkLoginForm(form){
+
+// 	var loginEmail=document.getElementById("loginEmail");
+// 	var loginPassword=document.getElementById("loginPassword");
+
+// 	if(form.email.value==""){
+// 		loginEmail.innerText="Please Enter Your Email first";
+// 		return false;
+// 	}else{
+// 		loginEmail.innerText="";
+// 	}
+
+// 	if(form.password.value==""){
+// 		loginPassword.innerText="Please Enter ypur Password ";
+// 		return false;
+// 	}else{
+// 		loginPassword.innerText="";
+// 	}
+
+// 	return true;
+
+// }
+// window.onload=function(){
+// 	let notFoundEmail=document.getElementById("notFoundEmail");
+// 	let notcorrectpass=document.getElementById("notcorrectpass");
+	
+
+// 	if(notFoundEmail.innerText!==""){
+// 		Swal.fire("Email not found signuP Instead orcheck email!")
+// 	}
+// 	if(notcorrectpass.innerText!==""){
+// 		Swal.fire("The Password You Entered Not Right")
+// 	}
+// }
+/* for Multi Country*/
+	// var bbtn=document.getElementById("submitfilter");
+	// var textin=document.getElementById('selectedcountry');
+	// var x=document.getElementsByClassName("chosen-container-multi");
+	// var elem=document.getElementById("selectCountry");
+	
+	// 			bbtn.onclick=function(){
+	// 				var yCount=x[0].children[0].childElementCount;
+	// 				var arr=new Array();
+	// 				for(var i=0;i<yCount;i++){
+	// 				var el=x[0].children[0].children[i].children[0].innerText;
+	// 				arr.push(el);
+	// 				}
+	// 				textin.value=arr;
+				
+	// 			}
+				
+	// for Multi Category
+
+	// var categoryS=document.getElementById('selectedCategory');
+	
+	// var elem=document.getElementById("selectCountry");
+	
+	// window.onclick=function(){
+	// 	var yCount=x[1].children[0].childElementCount;
+	// 	var arr2=new Array();
+	// 	for(var i=0;i<yCount;i++){
+	// 	var el=x[1].children[0].children[i].children[0].innerText;
+	// 	arr2.push(el);
+	// 	}
+	// 	categoryS.value=arr2;
+	// 	console.log(arr2);
+	// }
+		
+		
+	</script>
+</body>
+</html>

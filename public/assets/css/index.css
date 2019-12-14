@@ -1,0 +1,82 @@
+body{
+    background-color: #555;
+  
+}
+.rating{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%) rotateY(180deg);
+    -moz-transform: translate(-50%,-50%) rotateY(180deg);
+    -ms-transform: translate(-50%,-50%) rotateY(180deg);
+    -o-transform: translate(-50%,-50%) rotateY(180deg);
+    top: 7%;
+    left: 39%;
+    display: flex;
+}
+.rating input{
+    display: none;
+}
+.rating .createFeed{
+    width: 50px;
+    cursor: pointer;
+}
+.rating .createFeed::before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    font-size: 35PX;
+    color: #FFF;
+    text-shadow: 0 2px 5px #000;
+}
+.rating .createFeed::after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    font-size: 35PX;
+    color: yellow;
+    opacity: 0;
+    transition:.5s ;
+    -webkit-transition:.5s ;
+    -moz-transition:.5s ;
+    -ms-transition:.5s ;
+    -o-transition:.5s ;
+    text-shadow: 0 2px 5px rgbs(0,0,0,.5);
+}
+.rating .labelHover:hover::after,
+.rating label:hover ~ label::after,
+.rating input:checked ~ label::after{
+    opacity: 1;
+}
+.feedback-text{
+    margin-top: 50px !important;
+}
+.submitfeedBack{
+    background-color: #ff5851 !important;
+}
+/*//////////////////*/
+.rating .viewFeedlabel{
+    width: auto;
+    cursor: pointer;
+}
+.rating .viewFeed::before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    font-size: 20PX;
+    color: #FFF;
+    text-shadow: 0 2px 5px #000;
+}
+.rating .viewFeed::after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    font-size: 20PX;
+    color: yellow;
+    opacity: 0;
+    transition:.5s ;
+    -webkit-transition:.5s ;
+    -moz-transition:.5s ;
+    -ms-transition:.5s ;
+    -o-transition:.5s ;
+    text-shadow: 0 2px 5px rgbs(0,0,0,.5);
+}

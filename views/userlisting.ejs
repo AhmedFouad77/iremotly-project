@@ -1,0 +1,229 @@
+<% include partials/header2.ejs %>
+
+<!--Inner Home Banner Start-->
+<div class="wt-haslayout wt-innerbannerholder">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-xs-12 col-sm-12 col-md-8 push-md-2 col-lg-6 push-lg-3">
+                <div class="wt-innerbannercontent">
+                <div class="wt-title"><h2>Search Result</h2></div>
+                <ol class="wt-breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="wt-active">Freelancers</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wt-categoriesslider-holder wt-haslayout">
+    <div class="wt-title">
+        <h2>Browse Top Job Categories:</h2>
+    </div>
+    <div id="wt-categoriesslider" class="wt-categoriesslider owl-carousel">
+        <div class="wt-categoryslidercontent item">
+            <figure><img src="../assets/images/categories/slider/img-01.png" alt="image description"></figure>
+            <div class="wt-cattitle">
+                <h3><a href="javascrip:void(0);">Graphic &amp; Design</a></h3>
+                <span>Items: 523,112</span>
+            </div>
+        </div>
+        <div class="wt-categoryslidercontent item">
+            <figure><img src="../assets/images/categories/slider/img-02.png" alt="image description"></figure>
+            <div class="wt-cattitle">
+                <h3><a href="javascrip:void(0);">Digital Marketing</a></h3>
+                <span>Items: 523,112</span>
+            </div>
+        </div>
+        <div class="wt-categoryslidercontent item">
+            <figure><img src="../assets/images/categories/slider/img-03.png" alt="image description"></figure>
+            <div class="wt-cattitle">
+                <h3><a href="javascrip:void(0);">Writing &amp; Translation</a></h3>
+                <span>Items: 325,442</span>
+            </div>
+        </div>
+        <div class="wt-categoryslidercontent item">
+            <figure><img src="../assets/images/categories/slider/img-04.png" alt="image description"></figure>
+            <div class="wt-cattitle">
+                <h3><a href="javascrip:void(0);">Video &amp; Animation</a></h3>
+                <span>Items: 421,305</span>
+            </div>
+        </div>
+        <div class="wt-categoryslidercontent item">
+            <figure><img src="../assets/images/categories/slider/img-05.png" alt="image description"></figure>
+            <div class="wt-cattitle">
+                <h3><a href="javascrip:void(0);">Music &amp; Audio</a></h3>
+                <span>Items: 421,305</span>
+            </div>
+        </div>
+        <div class="wt-categoryslidercontent item">
+            <figure><img src="../assets/images/categories/slider/img-01.png" alt="image description"></figure>
+            <div class="wt-cattitle">
+                <h3><a href="javascrip:void(0);">Programing &amp; Tech</a></h3>
+                <span>Items: 421,305</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Inner Home End-->
+<!--Main Start-->
+<main id="wt-main" class="wt-main wt-haslayout wt-innerbgcolor">
+    <div class="wt-main-section wt-haslayout">
+        <!-- User Listing Start-->
+        <div class="wt-haslayout">
+            <div class="container">
+                <div class="row">
+                    <div id="wt-twocolumns" class="wt-twocolumns wt-haslayout">
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 float-left">
+                            <div class="wt-usersidebaricon">
+                                <span class="fa fa-cog wt-usersidebardown">
+                                    <i></i>
+                                </span>
+                            </div>
+                            <div class="wt-widget wt-startsearch">
+                                    <div class="wt-widgettitle">
+                                        <h2>Start Your Search</h2>
+                                    </div>
+                                    <div class="wt-widgetcontent">
+                                        <form class="wt-formtheme wt-formsearch" action="/filter/filterUserName" method="GET">
+                                            <fieldset>
+                                                <div class="form-group">
+                                                    <input type="text" name="UserName" class="form-control" placeholder="Search User by Name">
+                                                    <button type="submit"  class="wt-searchgbtn"><i class="lnr lnr-magnifier"></i></button>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                          <form class="wt-formtheme wt-formsearch" action="/filter/filterUser" action="get">
+                                <aside id="wt-sidebar" class="wt-sidebar wt-usersidebar">
+                                      
+                                        <!-- Location Filter -->
+                                        <div class="wt-widget wt-effectiveholder">
+                                            <div class="wt-widgettitle">
+                                                <h2>Location</h2>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="hidden" id="selectedcountry" name="selectedcountry" placeholder="selected country">
+													<select id="selectCountry" class="chosen-select Skills" data-placeholder="Location" name="Location" multiple style="height: auto;">
+                                                        <%for(var i=0;i<Countries.length;i++){let isoCode=Countries[i].code%>
+                                                        <option value="<%=Countries[i].name%>"><%=Countries[i].name%></option>
+                                                        <%}%>
+													
+													</select>
+												</div>
+                                            
+                                                    <fieldset>
+                                                        <div id="countryList" class="wt-checkboxholder wt-verticalscrollbar">
+                                                           <%for(var i=0;i<Countries.length;i++){let isoCode=Countries[i].code%>
+                                                            <span class="wt-checkbox">
+                                                                <input id="<%=Countries[i].name%>"  type="checkbox" name="description" value="company" >
+                                                                <label for="<%=Countries[i].name%>"> <img src="../assets/images/flag/<%=isoCode%>.png" style="width: 18px;height: 11px;" alt="img description" > <%=Countries[i].name%></label>
+                                                            </span>
+                                                            <%}%> 
+                                                        </div>
+                                                    </fieldset>
+                                                
+                                           
+                                        </div>
+                                        
+
+                                    
+                                        <div class="wt-widget wt-applyfilters-holder">
+                                            <div class="wt-widgetcontent">
+                                                <div class="wt-applyfilters">
+                                                    <span>Click “Apply Filter” to apply latest<br> changes made by you.</span>
+                                                    <button type="submit" id="submitfilter" class="wt-btn">Apply Filters</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                          </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-8 float-left">
+                            <div class="wt-userlistingholder wt-userlisting wt-haslayout">
+                                <!-- <div class="wt-userlistingtitle">
+                                    <span>01 - 48 of 57143 results for <em>"Logo Design"</em></span>
+                                </div> -->
+                                <div class="wt-filterholder">
+                                    <ul class="wt-filtertag">
+                                        <li class="wt-filtertagclear" style="margin-bottom: 10px;">
+                                            <a href="/userlisting"><i class="fa fa-eye"></i> <span>Find Your Employees</span></a>
+                                        </li>
+                               
+                                <%for(var x=0;x<users.length;x++){%>
+                                    <%if(users[x].Description && users[x].skills.length>0){%>
+                                <div class="wt-userlistinghold"> 
+                                    <figure class="wt-userlistingimg">
+                                            <%if(users[x].profilePhoto=="null"){%>
+                                              
+                                                <img src="../assets/images/profile/img-01.jpg" alt="img description">
+                                            <%}else{%>
+                                                 <img src="../assets/images/uploaded/<%=users[x]._id+'_profile.'+users[x].profilePhoto.split('.')[1]%>" alt="img description"> 
+                                            <%}%></figure>
+                                    <div class="wt-userlistingcontent">
+                                        <div class="wt-contenthead">
+                                            <div class="wt-title">
+                                                <a href="/userPage/<%=users[x]._id%>"><i class="fa fa-check-circle"></i> <%=users[x].firstName%>&nbsp;<%=users[x].lastName%></a>
+                                                <%if(users[x].jopTitle){%>
+                                                <h2><%=users[x].jopTitle%></h2>
+                                                <%}else{%>
+                                                <h2>Programmer</h2>
+                                                <%}%>
+                                            </div>
+                                            <ul class="wt-userlisting-breadcrumb">
+                                             
+                                                    <%let country= users[x].country%>
+                                                    <%for(var i=0;i<Countries.length;i++){if(Countries[i].name==country){let isoCode=Countries[i].code%>
+            
+                                                    <li><span><img src="../assets/images/flag/<%=isoCode%>.png" style="width: 18px;height: 11px;" alt="img description">  <%=country%> </span></li>
+                                                    <%}}%>                                          
+                                                  </ul>
+                                        </div>
+                                        <!-- <div class="wt-rightarea">
+                                            <span class="wt-starsvtwo">
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                            <span class="wt-starcontent">4.5/<sub>5</sub> <em>(860 Feedback)</em></span>
+                                        </div> -->
+                                    </div>
+                                    <div class="wt-description">
+                                        <p>
+                                                <%=users[x].Description%>
+                                        </p>
+                                    </div>
+                                    <%let mySkills=users[x].skills%>
+                                  
+                                    <%for(var n=0;n<mySkills.length;n++){%>
+                                      
+                                      
+                                    <div class="wt-tag wt-widgettag">
+                                        <a href="javascript:void(0);">  <%=mySkills[n].skillName%></a>
+                                       
+                                    </div>
+                                    <%}%>
+                                   
+                                </div>
+                                <%}}%>
+                                
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- User Listing End-->
+    </div>
+</main>
+<!--Main End-->
+
+<div class="scrollTop" title="scroll to top" id="scrollToTop" onclick="topFunction()">
+    <i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i>
+   </div>
+<% include partials/footer.ejs %>

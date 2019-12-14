@@ -1,0 +1,191 @@
+<%include partials/header2.ejs%>
+<!--Inner Home Banner Start-->
+<div class="wt-haslayout wt-innerbannerholder">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-xs-12 col-sm-12 col-md-8 push-md-2 col-lg-6 push-lg-3">
+                    <div class="wt-innerbannercontent">
+                    <div class="wt-title"><h2>Company Grid</h2></div>
+                    <ol class="wt-breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="wt-active">Company Grid</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Inner Home End-->
+    <!--Main Start-->
+    <main id="wt-main" class="wt-main wt-haslayout wt-innerbgcolor">
+        <div class="wt-haslayout wt-main-section">
+            <!-- User Listing Start-->
+            <div class="wt-haslayout">
+                <div class="container">
+                    <div class="row">
+                        <div id="wt-twocolumns" class="wt-twocolumns wt-haslayout">
+                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 float-left">
+                                       
+                                        <div class="wt-widget wt-startsearch">
+                                                <div class="wt-widgettitle">
+                                                    <h2>Start Your Search</h2>
+                                                </div>
+                                                <div class="wt-widgetcontent">
+                                                    <form class="wt-formtheme wt-formsearch" action="/filter/filterCompanyName" method="GET">
+                                                        <fieldset>
+                                                            <div class="form-group">
+                                                                <input type="text" name="companyName" class="form-control" placeholder="Search Company">
+                                                                <button type="submit" class="wt-searchgbtn"><i class="lnr lnr-magnifier"></i></button>
+                                                            </div>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                      <form class="wt-formtheme wt-formsearch" action="/filter/filterCompany" action="get">
+                                            <aside id="wt-sidebar" class="wt-sidebar wt-usersidebar">
+                                                    <div class="wt-widget wt-effectiveholder">
+                                                        <div class="wt-widgettitle">
+                                                            <h2>Categories</h2>
+                                                        </div>
+                                                        <div class="wt-widgetcontent">
+                                                            <!-- <form class="wt-formtheme wt-formsearch">
+                                                                <fieldset>
+                                                                    <div class="form-group">
+                                                                        <input type="text" name="Search" class="form-control" placeholder="Search Category">
+                                                                        <a href="javascrip:void(0);" class="wt-searchgbtn"><i class="lnr lnr-magnifier"></i></a>
+                                                                    </div>
+                                                                </fieldset> -->
+                                                                <fieldset>
+                                                                    <div class="wt-checkboxholder wt-verticalscrollbar">
+                                                                        <%for(var x=0;x<categories.length;x++){%>
+                                                                        <span class="wt-checkbox">
+                                                                            <input id="<%=categories[x].categoryTitle%>" type="checkbox" name="category" value="<%=categories[x]._id%>">
+                                                                            <label for="<%=categories[x].categoryTitle%>"> <%=categories[x].categoryTitle%></label>
+                                                                        </span>
+                                                                        <%}%>
+                                                                      
+                                                                    </div>
+                                                                </fieldset>
+                                                            <!-- </form> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="wt-widget wt-effectiveholder">
+                                                        <div class="wt-widgettitle">
+                                                            <h2>Location</h2>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="hidden" id="selectedcountry" name="selectedcountry" placeholder="selected country">
+                                                                <select id="selectCountry" class="chosen-select Skills" data-placeholder="Location" name="Location" multiple style="height: auto;">
+                                                                    <%for(var i=0;i<Countries.length;i++){let isoCode=Countries[i].code%>
+                                                                    <option value="<%=Countries[i].name%>"><%=Countries[i].name%></option>
+                                                                    <%}%>
+                                                                
+                                                                </select>
+                                                            </div>
+                                                        
+                                                                <fieldset>
+                                                                    <div id="countryList" class="wt-checkboxholder wt-verticalscrollbar">
+                                                                       <%for(var i=0;i<Countries.length;i++){let isoCode=Countries[i].code%>
+                                                                        <span class="wt-checkbox">
+                                                                            <input id="<%=Countries[i].name%>"  type="checkbox" name="description" value="company" >
+                                                                            <label for="<%=Countries[i].name%>"> <img src="../assets/images/flag/<%=isoCode%>.png" style="width: 18px;height: 11px;" alt="img description" > <%=Countries[i].name%></label>
+                                                                        </span>
+                                                                        <%}%> 
+                                                                    </div>
+                                                                </fieldset>
+                                                            
+                                                       
+                                                    </div>
+                                                    
+            
+                                                
+                                                    <div class="wt-widget wt-applyfilters-holder">
+                                                        <div class="wt-widgetcontent">
+                                                            <div class="wt-applyfilters">
+                                                                <span>Click “Apply Filter” to apply latest<br> changes made by you.</span>
+                                                                <button type="submit" id="submitfilter" class="wt-btn">Apply Filters</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </aside>
+                                      </form>
+                                    </div>
+                            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-8 float-left">
+                                <div class="wt-userlistingholder wt-haslayout">
+                                    <!-- <div class="wt-userlistingtitle">
+                                        <span>01 - 48 of 57143 results for <em>"Software House"</em></span>
+                                    </div> -->
+                                    <div class="wt-filterholder">
+                                        <ul class="wt-filtertag">
+                                            <li class="wt-filtertagclear">
+                                                <a href="/companyGrid"><i class="fa fa-eye"></i> <span>See All Comapnies</span></a>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                    <div class="wt-companysinfoholder">
+                                        <div class="row">
+                                                <%for(var x=0;x<users.length;x++){%>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                               
+                                                <div class="wt-companysdetails">
+                                                    <figure class="wt-companysimg">
+                                                            <%if(users[x].coverPhoto=="null"){%>
+                                                                <img src="../assets/images/bannerimg/banner.jpg" style="width: 350px; height: 172px;" alt="img description">
+                                                            <%}else{%>
+                                                                 <img src="../assets/images/uploaded/<%=users[x]._id+'_cover.'+users[x].coverPhoto.split('.')[1]%>" style="width: 350px; height: 172px;" alt="img description"> 
+                                                            <%}%>
+                                                    </figure>
+                                                    <div class="wt-companysinfo">
+                                                        <figure>
+                                                                <%if(users[x].profilePhoto=="null"){%>
+                                                                    <img src="../assets/images/company/img-01.jpg"  alt="img description">
+                                                                <%}else{%>
+                                                                     <img  src="../assets/images/uploaded/<%=users[x]._id+'_profile.'+users[x].profilePhoto.split('.')[1]%>" alt="img description"> 
+                                                                <%}%>
+                                                        </figure>
+                                                        <div class="wt-title">
+                                                            <a href="/companyProfile/<%=users[x]._id%>"><i class="fa fa-check-circle"></i> Verified Company</a>
+                                                            <h2><%=users[x].firstName%>&nbsp;<%=users[x].lastName%> </h2>
+                                                        </div>
+                                                        <ul class="wt-postarticlemeta">
+                                                            <!--
+                                                                <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <span>Open Jobs</span>
+                                                                </a>
+                                                                </li>
+                                                            -->
+                                                            <li>
+                                                                <a href="/companyProfile/<%=users[x]._id%>">
+                                                                    <span>Full Profile</span>
+                                                                </a>
+                                                            </li>
+                                                            <!--
+                                                                <li class="wt-following">
+                                                                <a href="javascript:void(0);">
+                                                                    <span>Following</span>
+                                                                </a>
+                                                            </li>
+                                                            -->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <%}%>
+                                           
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- User Listing End-->
+        </div>
+    </main>
+    <!--Main End-->
+    
+<%include partials/footer.ejs%>

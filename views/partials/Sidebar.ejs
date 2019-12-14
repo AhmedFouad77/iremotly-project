@@ -1,0 +1,499 @@
+ <!--Sidebar Start-->
+ <%if(user.role=="User"){%>
+ <div id="wt-sidebarwrapper" class="wt-sidebarwrapper">
+     <div id="wt-btnmenutoggle" class="wt-btnmenutoggle">
+         <span class="menu-icon">
+             <em></em>
+             <em></em>
+             <em></em>
+         </span>
+     </div>
+     <div id="wt-verticalscrollbar" class="wt-verticalscrollbar">
+         <div class="wt-companysdetails wt-usersidebar">
+
+             <%if(user.coverPhoto=="null"){%>
+             <figure class="wt-companysimg">
+                 <img src="../assets/images/bannerimg/banner.jpg" alt="img description">
+             </figure>
+             <%}else{%>
+             <figure>
+                 <img class="wt-companysimg"
+                     src="../assets/images/uploaded/<%=user._id+'_cover.'+user.coverPhoto.split('.')[1]%>"
+                     alt="img description">
+             </figure>
+             <%}%>
+<!-- 
+             <figure class="wt-companysimg">
+                 <img src="../assets/images/sidebar/img-01.jpg" alt="img description">
+             </figure> -->
+
+             <div class="wt-companysinfo">
+                <%if(user.profilePhoto=="null"){%>
+             <figure><img src="../assets/images/sidebar/img-02.jpg" alt="img description"></figure>
+             <%}else{%>
+             <figure><img src="../assets/images/uploaded/<%=user._id+'_profile.'+user.profilePhoto.split('.')[1]%>"
+                     alt="img description"> </figure>
+             <%}%>
+                 <div class="wt-title">
+                     <h2><a href="javascript:void(0);"> <%=user.firstName%>&nbsp;<%=user.lastName%></a></h2>
+             <!-- <span>Amento Tech</span> -->
+         </div>
+         <!-- <div class="wt-btnarea"><a href="/companyPost/" class="wt-btn">Post a Job</a></div> -->
+     </div>
+ </div>
+ <nav id="wt-navdashboard" class="wt-navdashboard">
+     <ul>
+         <!-- <li class="menu-item-has-children">
+                     <a href="javascript:void(0);">
+                         <i class="ti-dashboard"></i>
+                         <span>Insights</span>
+                     </a>
+                     <ul class="sub-menu">
+                         <li>
+                             <hr><a href="dashboard-insights.html">Insights</a></li>
+                         <li>
+                             <hr><a href="dashboard-insightsuser.html">Insights User</a></li>
+                     </ul>
+                 </li> -->
+         <li class="wt-active">
+             <a href="/user/myAccount">
+                 <i class="ti-briefcase"></i>
+                 <span>My Profile</span>
+             </a>
+         </li>
+         <li class="menu-item-has-children">
+             <a href="javascript:void(0);">
+                 <i class="ti-package"></i>
+                 <span>All Jobs</span>
+             </a>
+             <ul class="sub-menu">
+                 <!-- <li> <hr><a href="dashboard-completejobs.html">Completed Jobs</a></li> -->
+                 <!-- <li> <hr><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li> -->
+                 <li>
+                     <hr><a href="/companyPost/dashbordPost">Ongoing Jobs</a></li>
+                 <!-- <li><hr><a href="dashboard-ongoingsingle.html">Ongoing Single</a></li> -->
+             </ul>
+         </li>
+         <li>
+             <a href="/howitworks">
+                 <i class="ti-announcement"></i>
+                 <span> How It Works</span>
+             </a>
+         </li>
+         <li>
+             <a href="/companyPost/allDataPosts">
+                 <i class="ti-briefcase"></i>
+                 <span>Find Jobs</span>
+             </a>
+         </li>
+         <li>
+             <a href="/companyGrid">
+                 <i class="ti-briefcase"></i>
+                 <span> Find Company</span>
+             </a>
+         </li>
+         <li>
+             <a href="/privacyPolicy">
+                 <i class="ti-announcement"></i>
+                 <span> Privacy Policy</span>
+             </a>
+         </li>
+         <!-- <li>
+             <a href="dashboard-managejobs.html">
+                 <i class="ti-announcement"></i>
+                 <span>Manage Jobs</span>
+             </a>
+         </li> -->
+         <!-- <li class="wt-notificationicon menu-item-has-children">
+             <a href="javascript:void(0);">
+                 <i class="ti-pencil-alt"></i>
+                 <span>Messages</span>
+             </a>
+             <ul class="sub-menu">
+                 <li>
+                     <hr><a href="dashboard-messages.html">Messages</a></li>
+                 <li>
+                     <hr><a href="dashboard-messages2.html">Messages V 2</a></li>
+             </ul>
+         </li> -->
+         <!-- <li>
+             <a href="dashboard-saveitems.html">
+                 <i class="ti-heart"></i>
+                 <span>My Saved Items</span>
+             </a>
+         </li>
+         <li>
+             <a href="dashboard-invocies.html">
+                 <i class="ti-file"></i>
+                 <span>Invoices</span>
+             </a>
+         </li>
+         <li>
+             <a href="/category/addPage">
+                 <i class="ti-layers"></i>
+                 <span>Category</span>
+             </a>
+         </li>
+         <li>
+             <a href="dashboard-packages.html">
+                 <i class="ti-money"></i>
+                 <span>Packages</span>
+             </a>
+         </li>
+         <li>
+             <a href="dashboard-proposals.html">
+                 <i class="ti-bookmark-alt"></i>
+                 <span>Proposals</span>
+             </a>
+         </li>
+         <li>
+             <a href="dashboard-accountsettings.html">
+                 <i class="ti-anchor"></i>
+                 <span>Account Settings</span>
+             </a>
+         </li>
+         <li>
+             <a href="dashboard-helpsupport.html">
+                 <i class="ti-tag"></i>
+                 <span>Help &amp; Support</span>
+             </a>
+         </li> -->
+         <li>
+             <a>
+                 <i class="ti-shift-right"></i>
+                 <form action="/user/logout" method="POST">
+                     <span>
+                         <input type="submit" style="border: none;background-color: transparent;" value="logout">
+                     </span>
+                 </form>
+             </a>
+
+             <!-- <a href="index.html">
+                 
+                 <span>Logout</span>
+             </a> -->
+         </li>
+     </ul>
+ </nav>
+ <div class="wt-navdashboard-footer">
+     <span>Worktern. © 2019 All Rights Reserved.</span>
+ </div>
+ </div>
+ </div>
+ <%}else if(user.role=="Company"){%>
+ <div id="wt-sidebarwrapper" class="wt-sidebarwrapper">
+     <div id="wt-btnmenutoggle" class="wt-btnmenutoggle">
+         <span class="menu-icon">
+             <em></em>
+             <em></em>
+             <em></em>
+         </span>
+     </div>
+     <div id="wt-verticalscrollbar" class="wt-verticalscrollbar">
+         <div class="wt-companysdetails wt-usersidebar">
+
+             <%if(user.coverPhoto=="null"){%>
+             <figure>
+                 <img src="../assets/images/bannerimg/banner.jpg" alt="img description">
+             </figure>
+             <%}else{%>
+             <figure>
+                 <img class="wt-companysimg"
+                     src="../assets/images/uploaded/<%=user._id+'_cover.'+user.coverPhoto.split('.')[1]%>"
+                     alt="img description">
+             </figure>
+             <%}%>
+       <!-- 
+                    <figure class="wt-companysimg">
+                        <img src="../assets/images/sidebar/img-01.jpg" alt="img description">
+                    </figure> -->
+       
+                    <div class="wt-companysinfo">
+                       <%if(user.profilePhoto=="null"){%>
+             <figure><img src="../assets/images/profile/img-01.jpg" alt="img description"></figure>
+             <%}else{%>
+             <figure><img src="../assets/images/uploaded/<%=user._id+'_profile.'+user.profilePhoto.split('.')[1]%>"
+                     alt="img description"> </figure>
+             <%}%>
+                        <div class="wt-title">
+                            <h2><a href="javascript:void(0);"> <%=user.firstName%>&nbsp;<%=user.lastName%></a></h2>
+             <!-- <span>Amento Tech</span> -->
+         </div>
+         <div class="wt-btnarea"><a href="/companyPost/" class="wt-btn">Post a Job</a></div>
+     </div>
+ </div>
+ <nav id="wt-navdashboard" class="wt-navdashboard">
+     <ul>
+         <!-- <li class="menu-item-has-children">
+                            <a href="javascript:void(0);">
+                                <i class="ti-dashboard"></i>
+                                <span>Insights</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <hr><a href="dashboard-insights.html">Insights</a></li>
+                                <li>
+                                    <hr><a href="dashboard-insightsuser.html">Insights User</a></li>
+                            </ul>
+                        </li> -->
+         <li class="wt-active">
+             <a href="/user/myAccount">
+                 <i class="ti-briefcase"></i>
+                 <span>My Profile</span>
+             </a>
+         </li>
+         <li class="menu-item-has-children">
+             <a href="javascript:void(0);">
+                 <i class="ti-package"></i>
+                 <span>All Jobs</span>
+             </a>
+             <ul class="sub-menu">
+                 <!-- <li> <hr><a href="dashboard-completejobs.html">Completed Jobs</a></li> -->
+                 <!-- <li> <hr><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li> -->
+                 <li>
+                     <hr><a href="/companyPost/dashbordPost">Ongoing Jobs</a></li>
+                 <li>
+                     <hr><a href="/companyPost/completedThisJobPage">Completed Jobs</a>
+                 </li>
+                 <li>
+                     <hr><a href="/companyPost/completedThisJobPage">Completed Jobs</a>
+                 </li>
+             </ul>
+         </li>
+         <li>
+             <a href="/howitworks">
+                 <i class="ti-announcement"></i>
+                 <span> How It Works</span>
+             </a>
+         </li>
+         <li>
+             <a href="/companyPost/allDataPosts">
+                 <i class="ti-announcement"></i>
+                 <span>Find Jobs</span>
+             </a>
+         </li>
+         <li>
+             <a href="/companyGrid">
+                 <i class="ti-announcement"></i>
+                 <span> Find Company</span>
+             </a>
+         </li>
+         <li>
+             <a href="/privacyPolicy">
+                 <i class="ti-announcement"></i>
+                 <span> Privacy Policy</span>
+             </a>
+         </li>
+
+         <!-- <li class="wt-notificationicon menu-item-has-children">
+                    <a href="javascript:void(0);">
+                        <i class="ti-pencil-alt"></i>
+                        <span>Messages</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <hr><a href="dashboard-messages.html">Messages</a></li>
+                        <li>
+                            <hr><a href="dashboard-messages2.html">Messages V 2</a></li>
+                    </ul>
+                </li> -->
+         <!-- <li>
+                    <a href="dashboard-saveitems.html">
+                        <i class="ti-heart"></i>
+                        <span>My Saved Items</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-invocies.html">
+                        <i class="ti-file"></i>
+                        <span>Invoices</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/category/addPage">
+                        <i class="ti-layers"></i>
+                        <span>Category</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-packages.html">
+                        <i class="ti-money"></i>
+                        <span>Packages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-proposals.html">
+                        <i class="ti-bookmark-alt"></i>
+                        <span>Proposals</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-accountsettings.html">
+                        <i class="ti-anchor"></i>
+                        <span>Account Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-helpsupport.html">
+                        <i class="ti-tag"></i>
+                        <span>Help &amp; Support</span>
+                    </a>
+                </li> -->
+         <li>
+             <a>
+                 <i class="ti-shift-right"></i>
+                 <form action="/user/logout" method="POST">
+                     <span>
+                         <input type="submit" style="border: none;background-color: transparent;" value="logout">
+                     </span>
+                 </form>
+             </a>
+
+             <!-- <a href="index.html">
+                        
+                        <span>Logout</span>
+                    </a> -->
+         </li>
+     </ul>
+ </nav>
+ <div class="wt-navdashboard-footer">
+     <span>Worktern. © 2019 All Rights Reserved.</span>
+ </div>
+ </div>
+ </div>
+ <%}else{%>
+
+
+ <div id="wt-sidebarwrapper" class="wt-sidebarwrapper">
+     <div id="wt-btnmenutoggle" class="wt-btnmenutoggle">
+         <span class="menu-icon">
+             <em></em>
+             <em></em>
+             <em></em>
+         </span>
+     </div>
+     <div id="wt-verticalscrollbar" class="wt-verticalscrollbar">
+         <div class="wt-companysdetails wt-usersidebar">
+             <figure class="wt-companysimg">
+                 <img src="../assets/images/sidebar/img-01.jpg" alt="img description">
+             </figure>
+             <div class="wt-companysinfo">
+                 <figure><img src="../assets/images/sidebar/img-02.jpg" alt="img description"></figure>
+                 <div class="wt-title">
+                     <h2><a href="javascript:void(0);"> Louanne Mattioli</a></h2>
+                     <span>Amento Tech</span>
+                 </div>
+                 <div class="wt-btnarea"><a href="/companyPost/" class="wt-btn">Post a Job</a></div>
+             </div>
+         </div>
+         <nav id="wt-navdashboard" class="wt-navdashboard">
+             <ul>
+                 <li class="menu-item-has-children">
+                     <a href="javascript:void(0);">
+                         <i class="ti-dashboard"></i>
+                         <span>Insights</span>
+                     </a>
+                     <ul class="sub-menu">
+                         <li>
+                             <hr><a href="dashboard-insights.html">Insights</a></li>
+                         <li>
+                             <hr><a href="dashboard-insightsuser.html">Insights User</a></li>
+                     </ul>
+                 </li>
+                 <li class="wt-active">
+                     <a href="dashboard-profile.html">
+                         <i class="ti-briefcase"></i>
+                         <span>My Profile</span>
+                     </a>
+                 </li>
+                 <li class="menu-item-has-children">
+                     <a href="javascript:void(0);">
+                         <i class="ti-package"></i>
+                         <span>All Jobs</span>
+                     </a>
+                     <ul class="sub-menu">
+                         <li>
+                             <hr><a href="dashboard-completejobs.html">Completed Jobs</a></li>
+                         <li>
+                             <hr><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li>
+                         <li>
+                             <hr><a href="dashboard-ongoingjob.html">Ongoing Jobs</a></li>
+                         <li>
+                             <hr><a href="dashboard-ongoingsingle.html">Ongoing Single</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     <a href="dashboard-managejobs.html">
+                         <i class="ti-announcement"></i>
+                         <span>Manage Jobs</span>
+                     </a>
+                 </li>
+                 <li class="wt-notificationicon menu-item-has-children">
+                     <a href="javascript:void(0);">
+                         <i class="ti-pencil-alt"></i>
+                         <span>Messages</span>
+                     </a>
+                     <ul class="sub-menu">
+                         <li>
+                             <hr><a href="dashboard-messages.html">Messages</a></li>
+                         <li>
+                             <hr><a href="dashboard-messages2.html">Messages V 2</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     <a href="dashboard-saveitems.html">
+                         <i class="ti-heart"></i>
+                         <span>My Saved Items</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="dashboard-invocies.html">
+                         <i class="ti-file"></i>
+                         <span>Invoices</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="/category/addPage">
+                         <i class="ti-layers"></i>
+                         <span>Category</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="dashboard-packages.html">
+                         <i class="ti-money"></i>
+                         <span>Packages</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="dashboard-proposals.html">
+                         <i class="ti-bookmark-alt"></i>
+                         <span>Proposals</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="dashboard-accountsettings.html">
+                         <i class="ti-anchor"></i>
+                         <span>Account Settings</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="dashboard-helpsupport.html">
+                         <i class="ti-tag"></i>
+                         <span>Help &amp; Support</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="index.html">
+                         <i class="ti-shift-right"></i>
+                         <span>Logout</span>
+                     </a>
+                 </li>
+             </ul>
+         </nav>
+         <div class="wt-navdashboard-footer">
+             <span>Worktern. © 2019 All Rights Reserved.</span>
+         </div>
+     </div>
+ </div>
+ <%}%>
+ <!--Sidebar Start-->

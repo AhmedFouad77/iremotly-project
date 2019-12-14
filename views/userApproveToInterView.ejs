@@ -1,0 +1,630 @@
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title><%=title%></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/new.css">
+	<link rel="stylesheet" href="../../../assets/css/normalize.css">
+	<link rel="stylesheet" href="../../../assets/css/scrollbar.css">
+	<link rel="stylesheet" href="../../../assets/css/fontawesome/fontawesome-all.css">
+	<link rel="stylesheet" href="../../../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../../assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="../../../assets/css/linearicons.css">
+	<link rel="stylesheet" href="../../../assets/css/tipso.css">
+	<link rel="stylesheet" href="../../../assets/css/chosen.css">
+	<link rel="stylesheet" href="../../../assets/css/prettyPhoto.css">
+	<link rel="stylesheet" href="../../../assets/css/index.css">
+	<link rel="stylesheet" href="../../../assets/css/color.css">
+	<link rel="stylesheet" href="../../../assets/css/transitions.css">
+	<link rel="stylesheet" href="../../../assets/css/responsive.css">
+	<link rel="stylesheet" href="../../../assets/css/main.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	
+	<script src="../../../assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	
+</head>
+<body class="wt-login">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!-- Wrapper Start -->
+	<!-- Preloader Start -->
+	<div class="preloader-outer">
+		<div class="loader"></div>
+	</div>
+	<!-- Preloader End -->
+	<div id="wt-wrapper" class="wt-wrapper wt-haslayout">
+		<!--Content Wrapper Start-->
+		<!--Header Start-->
+		<header id="wt-header" class="wt-header wt-headervtwo wt-haslayout">
+			<div class="wt-navigationarea">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<strong class="wt-logo"><a href="/"><img src="../../../assets/images/logo.png" alt="company logo here"></a></strong>
+							<form class="wt-formtheme wt-formbanner wt-formbannervtwo" method="GET" action="/filter/heaerSearch">
+								<fieldset>
+									<div class="form-group">
+										<input type="text" name="jobTitle" class="form-control" placeholder="I’m looking for">
+										<div class="wt-formoptions">
+											<div class="wt-dropdown">
+												<span>In: <em class="selected-search-type">Employiees </em><i class="lnr lnr-chevron-down"></i></span>
+											</div>
+											<div class="wt-radioholder">
+												<span class="wt-radio">
+													<input id="wt-freelancers" data-title="Freelancers" type="radio" name="searchtype" value="Employiees" checked="">
+													<label for="wt-freelancers">Employiees</label>
+												</span>
+												<span class="wt-radio">
+													<input id="wt-jobs" data-title="Jobs" type="radio" name="searchtype" value="job">
+													<label for="wt-jobs">Jobs</label>
+												</span>
+												<span class="wt-radio">
+													<input id="wt-companies" data-title="Companies" type="radio" name="searchtype" value="Companies">
+													<label for="wt-companies">Companies</label>
+												</span>
+											</div>
+											<button type="submit" class="wt-searchbtn"><i class="lnr lnr-magnifier"></i></button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+							<div class="wt-rightarea">
+								<nav id="wt-nav" class="wt-nav navbar-expand-lg">
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+										<i class="lnr lnr-menu"></i>
+									</button>
+									<div class="collapse navbar-collapse wt-navigation" id="navbarNav">
+										<ul class="navbar-nav">
+											<li class="menu-item-has-children page_item_has_children">
+												<a href="javascript:void(0);">Main</a>
+												<ul class="sub-menu">
+													<li class="menu-item-has-children page_item_has_children wt-notificationicon"><span class="wt-dropdowarrow"><i class="lnr lnr-chevron-right"></i></span>
+														<a href="/">Home</a>
+														
+													</li>
+													<!-- 
+														<li class="menu-item-has-children page_item_has_children"><span class="wt-dropdowarrow"><i class="lnr lnr-chevron-right"></i></span>
+														<a href="javascript:void(0);">Article</a>
+														<ul class="sub-menu">
+															<li><a href="articlelist.html">Article List</a></li>
+															<li><a href="articlegrid.html">Article Grid</a></li>
+															<li><a href="articlesingle.html">Article Single</a></li>
+															<li><a href="articleclassic.html">Article Classic</a></li>
+														</ul>
+													</li>
+													-->
+													<li class="menu-item-has-children page_item_has_children"><span class="wt-dropdowarrow"><i class="lnr lnr-chevron-right"></i></span>
+														<a href="/companyGrid">Find Company</a>
+													</li>
+													<li>
+														<a href="/about">About</a>
+													</li>
+													<li>
+														<a href="/privacyPolicy">Privacy Policy</a>
+													</li>
+													<!-- 
+														<li>
+														<a href="comingsoon.html">Coming Soon</a>
+													</li>
+													<li>
+														<a href="404page.html">404page</a>
+													</li>
+													-->
+												</ul>
+											</li>
+											<li class="nav-item">
+												<a href="/howitworks">How It Works</a>
+											</li>
+											<li class="menu-item-has-children page_item_has_children">
+												<a href="/companyPost/allDataPosts">Find Jobs</a>
+											</li>
+											<li class="menu-item-has-children page_item_has_children">
+												<a href="/userlisting">View Employees</a>
+											</li>
+										</ul>
+									</div>
+								</nav>
+							
+								<%if(user===null){%>
+									<div class="wt-loginarea">
+										<figure class="wt-userimg">
+											<img src="../../../assets/images/user-login.png" alt="img description">
+										</figure>
+										<div class="wt-loginoption">
+											<a href="javascript:void(0);" id="wt-loginbtn" class="wt-loginbtn">Login</a>
+											<div class="wt-loginformhold">
+												<div class="wt-loginheader">
+													<span>Login</span>
+													<a href="javascript:;"><i class="fa fa-times"></i></a>
+												</div>
+												<form class="wt-formtheme wt-loginform do-login-form" action="/user/login" method="POST"onsubmit="return checkLoginForm(this);">
+													<fieldset>
+														<div class="form-group">
+															<input type="email" name="email" id="email" class="form-control" placeholder="Email">
+															<small class="text-danger" id="loginEmail"></small>
+														</div>
+														<div class="form-group">
+															<input type="password" name="password" id="password" class="form-control" placeholder="Password">
+															<small id="loginPassword" class="text-danger"></small>															
+														</div>
+														<div class="wt-logininfo">
+															<input type="submit" class="wt-btn btn do-login-button" value="Login">
+															<!-- 
+																<span class="wt-checkbox">
+																<input id="wt-login" type="checkbox" name="rememberme">
+																<label for="wt-login">Keep me logged in</label>
+															</span>
+															-->
+														</div>
+													</fieldset>
+													<div class="wt-loginfooterinfo">
+															<a href="javascript:;" class="wt-forgot-password">Forgot password?</a>
+														<a href="/user/signUp">Create account</a>
+													</div>
+												</form>
+											    <form class="wt-formtheme wt-loginform do-forgot-password-form wt-hide-form">
+											        <fieldset>
+											            <div class="form-group">
+											                <input type="email" name="email" class="form-control get_password" placeholder="Email">
+											            </div>
+											           
+											            <div class="wt-logininfo">
+											                <a href="javascript:;" class="wt-btn do-get-password">Get Pasword</a>
+											            </div>     
+											        </fieldset>
+											        <div class="wt-loginfooterinfo">
+											            <a href="javascript:void(0);" class="wt-show-login">Login</a>
+											            <a href="/user/signUp">Create account</a>
+											        </div>
+											    </form>
+											</div>
+										</div>
+										<a href="/user/signUp" class="wt-btn">Join Now</a>
+									</div>
+									<%}else{%>
+									<div class="wt-userlogedin" style="display: block;">
+										<figure class="wt-userimg">
+											<%if(user.role=="User"){%>
+												<%if(user.profilePhoto=="null"){%>
+													<img src="../../../assets/images/profile/img-01.jpg" alt="img description">
+												<%}else{%>
+													 <img src="../../../assets/images/uploaded/<%=user._id+'_profile.'+user.profilePhoto.split('.')[1]%>" alt="img description"> 
+												<%}%>
+											<%}else if(user.role=="Company"){%>
+												<%if(user.profilePhoto=="null"){%>
+													<img src="../../../assets/images/profile/img-01.jpg" alt="img description">
+												<!-- <img src="../../../assets/images/uploaded/<%=user._id+'_profile.'+user.profilePhoto.split('.')[1]%>" alt="img description"> -->
+												<%}else{%>
+													 <img src="../../../assets/images/uploaded/<%=user._id+'_profile.'+user.profilePhoto.split('.')[1]%>" alt="img description"> 
+												<%}%>
+											<%}else{%>
+												<img src="../../../assets/images/user-img.jpg" alt="image description">
+											<%}%>
+										</figure>
+										<div class="wt-username">
+												<h3><%=user.firstName%>&nbsp;<%=user.lastName%></h3>
+												<span><%=user.country%></span>
+										</div>
+										<nav class="wt-usernav">
+											<ul>
+												<%if(user.role=="User"){%>
+													<li>
+														<a href="/user/dashboard">
+															<span>Dashboard</span>
+														</a>
+													</li>
+													<%}%>
+													<%if(user.role=="Company"){%>
+													<li>
+														<a href="/company/dashboard">
+															<span>Dashboard</span>
+														</a>
+													</li>
+													<%}%>
+												<li>
+													<a href="/user/myAccount">
+														<span>MY Profile</span>
+													</a>
+												</li>
+												<%if(user.role=="User"){%>
+												<li>
+													<a href="/user/profileSetting">
+														<span>Profile Setting</span>
+													</a>
+												</li>
+												<%}else{%>
+												<li>
+													<a href="/company/companySetting">
+														<span>Company Setting</span>
+													</a>
+												</li>
+												<li class="menu-item-has-children">
+													<a href="javascript:void(0);">
+														<span>All Jobs</span>
+													</a>
+													<ul class="sub-menu">
+														<li><a href="dashboard-completejobs.html">Completed Jobs</a></li>
+														<li><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li>
+														<li><a href="/companyPost/dashbordPost">Ongoing Jobs</a></li>
+														<li><a href="dashboard-ongoingsingle.html">Ongoing Single</a></li>
+													</ul>
+												</li>
+												
+													<li>
+													<a href="dashboard-managejobs.html">
+														<span>Manage Jobs</span>
+													</a>
+												</li>
+												<li>
+													<a href="dashboard-invocies.html">
+														<span>Invoices</span>
+													</a>
+												</li>
+												<li>
+													<a href="dashboard-proposals.html">
+														<span>Proposals</span>
+													</a>
+												</li>
+												
+												
+												<%}%>
+												
+													<!-- <li class="menu-item-has-children">
+													<a href="javascript:void(0);">
+														<span>All Jobs</span>
+													</a>
+													<ul class="sub-menu">
+														<li><a href="dashboard-completejobs.html">Completed Jobs</a></li>
+														<li><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li>
+														<li><a href="/companyPost/usersApplied">Ongoing Jobs</a></li>
+														<li><a href="dashboard-ongoingsingle.html">Ongoing Single</a></li>
+													</ul>
+												</li>
+												
+													<li>
+													<a href="dashboard-managejobs.html">
+														<span>Manage Jobs</span>
+													</a>
+												</li>
+												 -->
+												
+												<li class="wt-notificationicon menu-item-has-children">
+													<a href="dashboard-messages.html">
+														<span>Messages</span>
+													</a>
+													
+												</li>
+												 
+													<li>
+													<a href="dashboard-saveitems.html">
+														<span>My Saved Items</span>
+													</a>
+												</li>
+											
+												
+													<!-- <li>
+													<a href="dashboard-invocies.html">
+														<span>Invoices</span>
+													</a>
+												</li> -->
+												<li>
+													<a href="dashboard-category.html">
+														<span>Category</span>
+													</a>
+												</li>
+												<!-- <li>
+													<a href="dashboard-proposals.html">
+														<span>Proposals</span>
+													</a>
+												</li>
+												 -->
+												
+													<li>
+													<a href="dashboard-accountsettings.html">
+														<span>Account Settings</span>
+													</a>
+												</li>
+												
+												<li>
+													<a href="dashboard-helpsupport.html">
+														<span>Help &amp; Support</span>
+													</a>
+												</li>
+												<li>
+													
+														<!-- <a href="/">
+														<span>Logout</span>
+													</a> -->
+													<a>
+													<form action="/user/logout" method="POST">
+														<span>
+													<input type="submit" style="border: none;background-color: transparent;" value="logout">
+													</span>
+													</form>
+												</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+									<%}%>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+        <!--Header End-->   
+     
+
+
+<!--Inner Home Banner Start-->
+<div class="wt-haslayout wt-innerbannerholder">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-xs-12 col-sm-12 col-md-8 push-md-2 col-lg-6 push-lg-3">
+                <div class="wt-innerbannercontent">
+                <div class="wt-title"><h2>Congratulation :)</h2></div>
+                <!-- <ol class="wt-breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="javascript:void(0);">Jobs</a></li>
+                    <li class="wt-active">Job Detail</li>
+                </ol> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Inner Home End-->
+
+<!--Main Start-->
+<main id="wt-main" class="wt-main wt-haslayout wt-innerbgcolor">
+    <div class="wt-haslayout wt-main-section">
+        <!-- User Listing Start-->
+        <div class="container">
+            <div class="row">
+                <div id="wt-twocolumns" class="wt-twocolumns wt-haslayout">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left">
+                        <div class="wt-proposalholder">
+                            <!-- <span class="wt-featuredtag"><img src="../assets/images/featured.png" alt="img description" data-tipso="Plus Member" class="template-content tipso_style"></span> -->
+                            <div class="wt-proposalhead">
+                                <h2><%=post.title%></h2> <!--Webpage Takes Many Seconds to Load, I Want to Reduce it to 3 or 4 Seconds Max-->
+                                <ul class="wt-userlisting-breadcrumb wt-userlisting-breadcrumbvtwo">
+                                    <li><span><i class="fa fa-dollar-sign"></i><i class="fa fa-dollar-sign"></i><i class="fa fa-dollar-sign"></i> <%= post.serviceLevel %></span></li>
+                                    <!-- <li><span><img src="../assets/images/flag/ye.png" alt="img description">  United States</span></li> -->
+                                    <li><span><i class="far fa-folder"></i> Type:<%= post.jobType %></span></li>
+                                    <li><span><i class="far fa-clock"></i> Duration:<%= post.jobDuration %></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-8 float-left">
+                        <div class="wt-projectdetail-holder">
+                            <div class="wt-projectdetail">
+                                <div class="wt-title">
+                                    <h3>Project Detail</h3>
+                                </div>
+                                <div class="wt-description">
+                                    <!-- <p>Excepteur sint occaecat cupidatat non proident, saeunt in culpa qui officia deserunt mollit anim laborum. Seden utem perspiciatis undesieu omnis voluptatem accusantium doque laudantium, totam rem aiam eaqueiu ipsa quae ab illoion inventore veritatisetm quasitea architecto beataea dictaed quia couuntur magni dolores eos aquist ratione vtatem seque nesnt. Neque porro quamest quioremas ipsum quiatem dolor sitem ameteism conctetur adipisci velit sedate quianon.</!-->
+                                        <p><%= post.content %></p>
+                                     <p><%=post.qualificationRequired%></p><!--Laborum sed ut perspiciatis unde omnis iste natus error sitems voluptatem accusantium doloremque laudantium, totam rem aiam eaque ipsa quae ab illo inventore veritatis etna quasi architecto beatae vitae dictation explicabo. nemo enim ipsam fugit.-->
+                                    <!-- <ul class="wt-projectliststyle">
+                                        <li><span><i class="fa fa-check"></i>Nemo enim ipsam voluptatem quia</span></li>
+                                        <li><span><i class="fa fa-check"></i>Adipisci velit, sed quia non numquam eius modi tempora</span></li>
+                                        <li><span><i class="fa fa-check"></i>Eaque ipsa quae ab illo inventore veritatis et quasi architecto</span></li>
+                                        <li><span><i class="fa fa-check"></i>qui dolorem ipsum quia dolor sit amet</span></li>
+                                    </ul> -->
+                                    <!-- <p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porrom quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nonae numquam eius modi tempora incidunt labore.</p> -->
+                                    <!-- <p>Eomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p> -->
+                                    <ul class="wt-projectliststyle">
+                                        <li><span><i class="fa fa-check"></i>Age Required : <%=post.ageRequired%></span></li>
+                                        <li><span><i class="fa fa-check"></i>Years Of Experience : <%=post.yearsOfExperience%></span></li>
+                                        <li><span><i class="fa fa-check"></i>English : <%=post.english%></span></li>
+                                        <li><span><i class="fa fa-check"></i>Salary : <%=post.Salary%></span></li>
+                                    </ul> 
+                                    <!-- <p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porrom quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nonae numquam eius modi tempora incidunt labore ste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> -->
+                                    <!-- <p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porrom quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nonae numquam eius modi tempora incidunt labore.</p> -->
+                                </div>
+                            </div>
+                            <div class="wt-skillsrequired">
+                                <div class="wt-title">
+                                    <h3>Skills Required</h3>
+                                </div>
+                                <% for(let i of post.skills){ %>
+                                <div class="wt-tag wt-widgettag">
+                                     <a href="javascript:void(0);"><%= i %></a>
+                                </div>
+                                <%}%>
+                            </div>
+                            
+                                <!-- <div class="wt-attachments">
+                                <div class="wt-title">
+                                    <h3>Attachments</h3>
+                                </div>
+                                <ul class="wt-attachfile">
+                                    <li>
+                                        <span>Wireframe Document.doc</span>
+                                        <em>File size: 512 kb<a href="javascript:void(0);"><i class="lnr lnr-download"></i></a></em>
+                                    </li>
+                                    <li>
+                                        <span>Requirments.pdf</span>
+                                        <em>File size: 110 kb<a href="javascript:void(0);"><i class="lnr lnr-download"></i></a></em>
+                                    </li>
+                                    <li>
+                                        <span>Company Intro.docx</span>
+                                        <em>File size: 224 kb<a href="javascript:void(0);"><i class="lnr lnr-download"></i></a></em>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            
+                            
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 float-left">
+                        <aside id="wt-sidebar" class="wt-sidebar">
+                        
+                            <div class="wt-widget wt-companysinfo-jobsingle">
+                                <div class="wt-companysdetails">
+                                    <figure class="wt-companysimg">
+                                        <%if(post.creatorCompany.coverPhoto==="null"){%>
+                                            <img src="../../../assets/images/company/img-01.jpg" alt="img description"> <!---->
+                                            <%}else{%>
+                                        <img src="../../../assets/images/uploaded/<%=company._id%>_cover.jpg" alt="img description"> <!--../assets/images/company/img-01.jpg-->
+                                        <%}%>
+                                    </figure>
+                                    <div class="wt-companysinfo">
+                                            <%if(post.creatorCompany.profilePhoto==="null"){%>
+                                        <figure><img src="../../../assets/images/company/img-01.png" alt="img description"></figure>
+                                        <%}else{%>
+                                            <figure><img src="../../../assets/images/uploaded/<%=company._id%>_profile.jpg" alt="img description"></figure>
+                                            <%}%>
+                                        <div class="wt-title">
+                                            <!-- <a href="javascript:void(0);"><i class="fa fa-check-circle"></i> Verified Company</a> -->
+                                            <h2><%=post.creatorCompany.Name%></h2>
+                                        </div>
+                                        <ul class="wt-postarticlemeta">
+                                            <!-- 
+                                                <li>
+                                                <a href="javascript:void(0);">
+                                                    <span>Open Jobs</span>
+                                                </a>
+                                            </li>
+                                            -->
+                                            <li>
+                                                <a href="/companyProfile/<%=post.creatorCompany._id%>">
+                                                    <span>Full Profile</span>
+                                                </a>
+                                            </li>
+                                            <!-- 
+                                                <li class="wt-following">
+                                                <a href="javascript:void(0);">
+                                                    <span>Following</span>
+                                                </a>
+                                            </li>
+                                            -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wt-widget wt-reportjob">
+                                <div class="wt-widgettitle">
+                                    <h2>Report This Job</h2>
+                                </div>
+                                <div class="wt-widgetcontent">
+                                    <form class="wt-formtheme wt-formreport">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <span class="wt-select">
+                                                    <select>
+                                                        <option value="Reason">Select Reason</option>
+                                                        <option value="Reason1">Reason 1</option>
+                                                        <option value="Reason2">Reason 2</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" placeholder="Description"></textarea>
+                                            </div>
+                                            <div class="form-group wt-btnarea">
+                                                <a href="javascrip:void(0);" class="wt-btn">Submit</a>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </aside>
+                    </div>
+                    
+                    <!-- class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left" -->
+
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-8 float-left">
+                        <div class="wt-proposalholder">
+                            <!-- <span class="wt-featuredtag"><img src="../assets/images/featured.png" alt="img description" data-tipso="Plus Member" class="template-content tipso_style"></span> -->
+                            <div class="wt-proposalhead">
+                                <h3>The Date of Interview Is  : <%=t%> </h3> <!--Webpage Takes Many Seconds to Load, I Want to Reduce it to 3 or 4 Seconds Max-->
+                                <ul class="wt-userlisting-breadcrumb wt-userlisting-breadcrumbvtwo">
+                                    <!-- <li><span><i class="fa fa-dollar-sign"></i> </span></li> -->
+                                    <li><span><i class="far fa-clock"></i> Start Interview :<%= application.StartTime %></span></li>
+                                    <!-- <li><span><img src="../assets/images/flag/ye.png" alt="img description">  United States</span></li> -->
+                                    <li><span><i class="far fa-clock"></i> End Interview :<%= application.EndTime %></span></li>
+                                    <div class="float-right">
+                                        <span><a href="/companyPost/userApproveJob/<%=companyID%>/<%=userId%>/<%=postID%>" class="btn btn-dark">Approve</a> </span>
+                                        <span><a href="/companyPost/userCancelJob/<%=companyID%>/<%=userId%>/<%=postID%>" class="btn btn-danger">Cancel</a></span>
+                                    </div>
+                                    
+                                </ul>
+                            </div>
+                            <div class="wt-title">
+								<!-- <input type="text" name="" id="" value="<%=application%>"> -->
+                                    <h5>if you not avaliable in this date or time we will send a maasseege to this company to change the date . </h5>
+                                    <span><a href="/companyPost/userChangeMettingJob/<%=companyID%>/<%=userId%>/<%=postID%>"  class="btn btn-warning"> change metting</a></span>
+                                </div>
+                        
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- User Listing End-->
+    </div>
+</main>
+<!--Main End-->
+
+
+
+        
+<script src="../../../assets/js/vendor/jquery-3.3.1.js"></script>
+<script src="../../../assets/js/vendor/jquery-library.js"></script>
+<script src="../../../assets/js/vendor/bootstrap.min.js"></script>
+<script src="../../../assets/js/owl.carousel.min.js"></script>
+<script src="../../../assets/js/chosen.jquery.js"></script>
+<script src="../../../assets/js/tilt.jquery.js"></script>
+<script src="../../../assets/js/scrollbar.min.js"></script>
+<script src="../../../assets/js/prettyPhoto.js"></script>
+<script src="../../../assets/js/jquery-ui.js"></script>
+<script src="../../../assets/js/readmore.js"></script>
+<script src="../../../assets/js/countTo.js"></script>
+<script src="../../../assets/js/appear.js"></script>
+<script src="../../../assets/js/tipso.js"></script>
+<script src="../../../assets/js/jRate.js"></script>
+<script src="../../../assets/js/main.js"></script>
+<script>
+    const menu_icon = document.querySelector('.menu-icon');
+    function addClassFunThree() {
+        this.classList.toggle("click-menu-icon");
+    }
+    menu_icon.addEventListener('click', addClassFunThree);
+</script>
+<script>
+    $(function() {
+    $('.dates #usr1').datepicker({
+        'format': 'yyyy-mm-dd',
+        'autoclose': true
+    });
+
+});
+    </script> 
+
+</body>
+</html>

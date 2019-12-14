@@ -1,0 +1,539 @@
+<%include partials/header3.ejs %>
+<!--Main Start-->
+<main id="wt-main" class="wt-main wt-haslayout">
+    <!--Sidebar Start-->
+    <%include partials/Sidebar.ejs %>
+    <!-- <div id="wt-sidebarwrapper" class="wt-sidebarwrapper">
+        <div id="wt-btnmenutoggle" class="wt-btnmenutoggle">
+            <span class="menu-icon">
+                <em></em>
+                <em></em>
+                <em></em>
+            </span>
+        </div>
+        <div id="wt-verticalscrollbar" class="wt-verticalscrollbar">
+            <div class="wt-companysdetails wt-usersidebar">
+                <figure class="wt-companysimg">
+                    <img src="../assets/images/sidebar/img-01.jpg" alt="img description">
+                </figure>
+                <div class="wt-companysinfo">
+                    <figure><img src="../assets/images/sidebar/img-02.jpg" alt="img description"></figure>
+                    <div class="wt-title">
+                        <h2><a href="javascript:void(0);"> Louanne Mattioli</a></h2>
+                        <span>Amento Tech</span>
+                    </div>
+                    <div class="wt-btnarea"><a href="/companyPost/" class="wt-btn">Post a Job</a></div>
+                </div>
+            </div>
+            <nav id="wt-navdashboard" class="wt-navdashboard">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="javascript:void(0);">
+                            <i class="ti-dashboard"></i>
+                            <span>Insights</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <hr><a href="dashboard-insights.html">Insights</a></li>
+                            <li>
+                                <hr><a href="dashboard-insightsuser.html">Insights User</a></li>
+                        </ul>
+                    </li>
+                    <li class="wt-active">
+                        <a href="dashboard-profile.html">
+                            <i class="ti-briefcase"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="javascript:void(0);">
+                            <i class="ti-package"></i>
+                            <span>All Jobs</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <hr><a href="dashboard-completejobs.html">Completed Jobs</a></li>
+                            <li>
+                                <hr><a href="dashboard-canceljobs.html">Cancelled Jobs</a></li>
+                            <li>
+                                <hr><a href="dashboard-ongoingjob.html">Ongoing Jobs</a></li>
+                            <li>
+                                <hr><a href="dashboard-ongoingsingle.html">Ongoing Single</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dashboard-managejobs.html">
+                            <i class="ti-announcement"></i>
+                            <span>Manage Jobs</span>
+                        </a>
+                    </li>
+                    <li class="wt-notificationicon menu-item-has-children">
+                        <a href="javascript:void(0);">
+                            <i class="ti-pencil-alt"></i>
+                            <span>Messages</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <hr><a href="dashboard-messages.html">Messages</a></li>
+                            <li>
+                                <hr><a href="dashboard-messages2.html">Messages V 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dashboard-saveitems.html">
+                            <i class="ti-heart"></i>
+                            <span>My Saved Items</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-invocies.html">
+                            <i class="ti-file"></i>
+                            <span>Invoices</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/category/addPage">
+                            <i class="ti-layers"></i>
+                            <span>Category</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-packages.html">
+                            <i class="ti-money"></i>
+                            <span>Packages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-proposals.html">
+                            <i class="ti-bookmark-alt"></i>
+                            <span>Proposals</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-accountsettings.html">
+                            <i class="ti-anchor"></i>
+                            <span>Account Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-helpsupport.html">
+                            <i class="ti-tag"></i>
+                            <span>Help &amp; Support</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="ti-shift-right"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wt-navdashboard-footer">
+                <span>Worktern. © 2019 All Rights Reserved.</span>
+            </div>
+        </div>
+    </div> -->
+    <!--Sidebar Start-->
+    <!--Register Form Start-->
+    <section class="wt-haslayout">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-9">
+                <div class="wt-haslayout wt-dbsectionspace">
+                    <div class="wt-dashboardbox wt-dashboardtabsholder">
+                        <div class="wt-dashboardboxtitle">
+                            <h2>My Profile</h2>
+                        </div>
+                        <div class="wt-dashboardtabs">
+                            <ul class="wt-tabstitle nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="active" data-toggle="tab" href="#wt-skills">Personal Details &amp;
+                                        Skills</a>
+                                </li>
+
+                                <li class="nav-item"><a data-toggle="tab" href="#wt-password">Password</a></li>
+                                <li class="nav-item"><a data-toggle="tab" href="#wt-deleteaccount">Delete Account</a>
+                                </li>
+                                <!-- 
+                                    <li class="nav-item"><a data-toggle="tab" href="#wt-awards">Projects &amp; Awards</a></li>
+                                -->
+                            </ul>
+                        </div>
+                        <div class="wt-tabscontent tab-content">
+                            <div class="wt-personalskillshold tab-pane active fade show" id="wt-skills">
+                                <div class="wt-yourdetails wt-tabsinfo">
+                                    <div class="wt-tabscontenttitle">
+                                        <h2>Your Details</h2>
+                                    </div>
+                                    <form class="wt-formtheme wt-userform" action="/company/companySetting/update"
+                                        method="POST" id="updateCompanyDataForm">
+                                        <fieldset>
+
+                                            <div class="form-group form-group-half">
+                                                <label for="name">User Name:</label>
+                                                <input type="text" name="name" id="name"
+                                                    value="<%=user.firstName%>&nbsp;<%=user.lastName%>"
+                                                    class="form-control" placeholder="Company Name">
+                                            </div>
+                                            <div class="form-group form-group-half">
+                                                <label for="email">Email:</label>
+                                                <input type="email" id="email" name="email" value="<%=user.email%>"
+                                                    class="form-control" placeholder="Add Your Email Here" readonly
+                                                    disabled>
+                                            </div>
+                                            <!-- Start Select Departement  -->
+                                            <div class="form-group form-group-half" id="selectDepatement">
+                                                <span class="wt-select">
+
+                                                    <label for="departement">Select Departement:</label>
+                                                    <select name="departement" id="departement">
+
+                                                        <%for(var x=0;x<categories.length;x++){%>
+                                                        <option value="<%=categories[x]._id%>">
+                                                            <%=categories[x].categoryTitle%></option>
+                                                        <%}%>
+                                                </select>   
+                                                </span>                                          
+                                            </div>
+                                            <!-- End Select Departement -->
+                                        
+                                            <div class="form-group form-group-half">
+                                                 <label for="phone">Phone Number:</label>
+                                                <input type="text" name="phone" id="companyphone" value="<%=user.phone%>"
+                                                        class="form-control" placeholder="Add Your Phone Here">
+                                                        <small class="text-danger" id="errPhoneMsg"></small>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="wt-select">
+                                                    <label for="country">Your Country:</label>
+                                                    <select name="country" id="country">
+                                                        <%if(user.country){%>
+                                                        <option value="<%=user.country%>" selected><%=user.country%>
+                                                        </option>
+                                                        <%}else{%>
+                                                        <option disabled selected>-- Select Country --</option>
+                                                        <%}%>
+                                                                    <%for(var x=0;x<Countries.length;x++){%>
+                                                        <option value="<%=Countries[x].name%>"><%=Countries[x].name%>
+                                                        </option>
+                                                        <%}%>
+                                                                </select>
+                                                                </span>
+                                                </div>
+                                                <div class="form-group form-group-half">
+                                                    <label for="date">Establish Date:</label>
+                                                <input type="date" id="date" name="dateOrigin"value="<%=user.dateOfOrigin%>"
+                                                        class="form-control" placeholder="Add Your Establishment Date
+                                                        Here">
+                                                        <small class="text-danger" id="dateOrigin"></small>
+                                            </div>
+                                            <div class="form-group form-group-half">
+                                                <label for="address">Your Address:</label>
+                                                <input type="text" id="address" name="address" class="form-control"
+                                                    value="<%=user.address%>" placeholder="Add Your Address Here">
+                                            </div>
+                                            <!-- <div class="form-group">
+                                                <label for="state">Your State:</label>
+                                                <input type="text" id="state" name="state" class="form-control"
+                                                    value="<%=user.state%>" placeholder="Add Your State Here">
+                                            </div> -->
+                                            <div class="form-group">
+                                                <!-- <label for="employees">No. of employees you have:</label> -->
+                                                <span class="wt-select">
+                                                    <label for="companysize">Company Size:</label>
+                                                    <select name="companySize" id="companysize">
+                                                        <option value="<%=user.companySize%>" selected>
+                                                            <%=user.companySize%></option>
+                                                        <option value="2 - 9 Employees">2 - 9 Employees</option>
+                                                        <option value="10 - 99 Employees">10 - 99 Employees</option>
+                                                        <option value="100 - 499 Employees">100 - 499 Employees</option>
+                                                        <option value="500 - 1000 Employees">500 - 1000 Employees
+                                                        </option>
+                                                        <option value="More Than 1000 Employees">More Than 1000
+                                                            Employees</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="description">Descripe Your Company :)</label>
+                                                <textarea name="Description" id="description" class="form-control"
+                                                    placeholder="Description"><%=user.Description%></textarea>
+                                            </div>
+                                            <div class="form-group">
+
+                                                <input id="submitForm" type="submit" value="Update Data"
+                                                    class="btn btn-default btn-lg float-right" />
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="wt-profilephoto wt-tabsinfo">
+                                    <div class="wt-tabscontenttitle">
+                                        <h2>Profile Photo</h2>
+                                    </div>
+                                    <div class="wt-profilephotocontent">
+                                        <div class="wt-description">
+                                            <!-- <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                                et dolore magna aliqua aut enim ad minim veniamac quis nostrud
+                                                exercitation ullamco laboris.</p> -->
+                                        </div>
+                                        <form class="wt-formtheme wt-formprojectinfo wt-formcategory"
+                                            action="/company/companySetting/uploadProfilePhoto" method="POST"
+                                            enctype="multipart/form-data">
+                                            <fieldset>
+                                                <!-- <div class="form-group form-group-label">
+                                                    <div class="wt-labelgroup">
+                                                        <label for="filep">
+                                                            <span class="wt-btn">Select Files</span>
+                                                            <input type="file" name="file" id="filep">
+                                                        </label>
+
+                                                        <em class="wt-fileuploading">Uploading<i
+                                                                class="fa fa-spinner fa-spin"></i></em>
+                                                    </div>
+                                                </div> -->
+                                                <div class="form-group">
+                                                    <ul class="wt-attachfile wt-attachfilevtwo">
+                                                        <li class="wt-uploadingholder wt-companyimg-uploading">
+                                                            <div class="wt-uploadingbox">
+                                                                <figure>
+                                                                    <%if(user.profilePhoto=="null"){%>
+                                                                    <img src="../assets/images/company/img-01.jpg"
+                                                                        alt="img description">
+                                                                    <%}else{%>
+                                                                    <img src="../assets/images/uploaded/<%=user._id+'_profile.'+user.profilePhoto.split('.')[1]%>"
+                                                                        alt="img description">
+                                                                    <%}%>
+                                                                </figure>
+                                                                <!-- 
+                                                                    <div class="wt-uploadingbar wt-uploading">
+                                                                    <span class="uploadprogressbar"></span>
+                                                                    <span>Profile Photo.jpg</span>
+                                                                    <em>File size: 300 kb<a href="javascript:void(0);" class="lnr lnr-cross"></a></em>
+                                                                </div>
+                                                                -->
+                                                            </div>
+                                                        </li>
+                                                        <!-- 
+                                                            <li class="wt-uploadingholder wt-companyimg-user">
+                                                            <div class="wt-uploadingbox">
+                                                                <figure><img src="../assets/images/company/img-08.jpg" alt="img description"></figure>
+                                                                <div class="wt-uploadingbar wt-uploading">
+                                                                    <span class="uploadprogressbar"></span>
+                                                                    <span>Profile Photo.jpg</span>
+                                                                    <em>File size: 300 kb<a href="javascript:void(0);" class="lnr lnr-cross"></a></em>
+                                                                </div>	
+                                                            </div>
+                                                        </li>
+                                                        <li class="wt-uploadingholder">
+                                                            <div class="wt-uploadingbox">
+                                                                <div class="wt-designimg">
+                                                                    <input id="demoz" type="radio" name="employees" value="company" checked="">
+                                                                    <label for="demoz"><img src="../assets/images/company/img-09.jpg" alt="img description"><i class="fa fa-check"></i></label>
+                                                                </div>
+                                                                <div class="wt-uploadingbar wt-uploading">
+                                                                    <span class="uploadprogressbar"></span>
+                                                                    <span>Profile Photo.jpg</span>
+                                                                    <em>File size: 300 kb<a href="javascript:void(0);" class="lnr lnr-cross"></a></em>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        -->
+                                                    </ul>
+                                                    <div class="form-group form-group-label">
+                                                        <div class="wt-labelgroup">
+                                                            <label for="filep">
+                                                                <span class="wt-btn">Select Files</span>
+                                                                <input type="file" name="file" id="filep">
+                                                            </label>
+                                                            <!-- <span>Drop files here to upload</span> -->
+                                                            <em class="wt-fileuploading">Uploading<i
+                                                                    class="fa fa-spinner fa-spin"></i></em>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="submit" value="Upload File" class="btn btn-lg float-right btn-default"/> 
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="wt-bannerphoto wt-tabsinfo">
+                                    <div class="wt-tabscontenttitle">
+                                        <h2>Banner Photo</h2>
+                                    </div>
+                                    <div class="wt-profilephotocontent">
+                                        <div class="wt-description">
+                                            <!-- <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua aut enim ad minim veniamac quis nostrud exercitation ullamco laboris.</p> -->
+                                        </div>
+                                        <form class="wt-formtheme wt-formprojectinfo wt-formcategory" action="/company/companySetting/uploadCoverPhoto" method="POST" enctype="multipart/form-data">
+                                            <fieldset>
+                                                <!-- <div class="form-group form-group-label">
+                                                    <div class="wt-labelgroup">
+                                                        <label for="filew">
+                                                            <span class="wt-btn">Select Files</span>
+                                                            <input type="file" name="filew" id="filew">
+                                                        </label>
+                                                        <span>Drop files here to upload</span>
+                                                        <em class="wt-fileuploading">Uploading<i class="fa fa-spinner fa-spin"></i></em>
+                                                    </div>
+                                                </div> -->
+                                                <div class="form-group">
+                                                    <ul class="wt-attachfile wt-attachfilevtwo">
+                                                        <li class="wt-uploadingholder">
+                                                            <div class="wt-uploadingbox">
+                                                                <div class="wt-designimg">
+                                                                    <input id="demoq" type="radio" name="employees" value="company" checked="">
+                                                                    <label for="demoq">
+                                                                        <%if(user.coverPhoto=="null"){%>
+                                                                    <img src="../assets/images/bannerimg/banner.jpg"
+                                                                        alt="img description">
+                                                                    <%}else{%>
+                                                                    <img src="../assets/images/uploaded/<%=user._id+'_cover.'+user.coverPhoto.split('.')[1]%>"
+                                                                        alt="img description">
+                                                                    <%}%>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- 
+                                                                    <div class="wt-uploadingbar">
+                                                                    <span class="uploadprogressbar"></span>
+                                                                    <span>Banner Photo.jpg</span>
+                                                                    <em>File size: 300 kb<a href="javascript:void(0);" class="lnr lnr-cross"></a></em>
+                                                                </div>
+                                                                -->
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="form-group form-group-label">
+                                                        <div class="wt-labelgroup">
+                                                            <label for="filew">
+                                                                <span class="wt-btn">Select Files</span>
+                                                                <input type="file" name="filew" id="filew">
+                                                            </label>
+                                                            <!-- <span>Drop files here to upload</span> -->
+                                                            <em class="wt-fileuploading">Uploading<i class="fa fa-spinner fa-spin"></i></em>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="submit" value="Add Photo" class="btn btn-lg btn-default float-right"/>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                             
+                              </div>
+
+                           
+                            <div class="wt-educationholder tab-pane fade" id="wt-education">
+                               </div>
+                            <div class="wt-passwordholder tab-pane fade" id="wt-password">
+                                <div class="wt-changepassword">
+                                    <div class="wt-tabscontenttitle">
+                                        <h2>Change Your Password</h2>
+                                    </div>
+                                    <form class="wt-formtheme wt-userform" action="/company/changePassword" method="POST" >
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <input type="password" name="oldpassword" class="form-control" placeholder="Your Current Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" name="newPass" class="form-control" placeholder="New Password">
+                                            </div>
+                                            <div class="form-group">
+                                                    <input type="password" name="confirmPass" class="form-control" placeholder="Confirm Password">
+                                                </div>
+                                            <!-- <div class="form-group">
+                                                <span class="wt-checkbox">
+                                                    <input id="termsconditions" type="checkbox" name="termsconditions" value="termsconditions" checked="">
+                                                    <label for="termsconditions"><span>Logout from all other web/mobile session now.</span></label>
+                                                </span>
+                                            </div> -->
+                                            <div class="form-group">
+                                                <button type="submit" class="wt-btn float-right" >Change Password</button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="wt-accountholder tab-pane fade" id="wt-deleteaccount">
+                                <div class="wt-accountdel">
+                                    <div class="wt-tabscontenttitle">
+                                        <h2>Delete Account</h2>
+                                    </div>
+                                    <form class="wt-formtheme wt-userform" action="/company/deleteAccount" method="POST">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <input type="password" name="password" class="form-control" placeholder="Enter Password">
+                                            </div>
+                                            <!-- <div class="form-group ">
+                                                <input type="password" name="confirmpassword" class="form-control" placeholder="Enter Password">
+                                            </div> -->
+                                            <!-- <div class="form-group">
+                                                <span class="wt-select">
+                                                    <select>
+                                                        <option value="" disabled="">Select Reason to Leave</option>
+                                                        <option value="">Reason</option>
+                                                        <option value="">Reason</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control" placeholder="Description (Optional)"></textarea>
+                                            </div>
+                                            <div class="form-group form-group-half float-right">
+                                                <span class="wt-checkbox">
+                                                    <input id="termsconditions1" type="checkbox" name="termsconditions" value="termsconditions">
+                                                    <label for="termsconditions1"><span>Unsubscribe me from all newsletter list</span></label>
+                                                </span>
+                                            </div> -->
+                                            <div class="form-group form-group wt-btnarea">
+                                                <button type="submit"  class="wt-btn float-right">Delete Account</button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="wt-awardsholder tab-pane fade" id="wt-awards">
+                                					
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="wt-updatall">
+                    <i class="ti-announcement"></i>
+                    <span>Update all the latest changes made by you, by just clicking on “Save &amp; Continue” button.</span>
+                    <a class="wt-btn" href="javascript:void(0);">Save &amp; Update</a>
+                </div> -->
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="wt-haslayout wt-dbsectionspace wt-codescansidebar">
+                    
+                    <div class="wt-companyad">
+                        <figure class="wt-companyadimg"><img src="../assets/images/add-img.jpg" alt="img description"></figure>
+                        <span>Advertisement  255px X 255px</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Register Form End-->
+</main>
+<!--Main End-->	
+</div>
+<!--Content Wrapper End-->
+</div>
+<!--Wrapper End-->
+
+   
+
+
+    
+
+    
+
+
+<%include partials/footer2.ejs%>
